@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./images/business.png"
+      type="image/x-icon"
+    />
+    <title>Minimatic Solution</title>
+
+    <!-- tailwind & daisy ui cdn  -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- tailwind customize  -->
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              titleColor: "#414040",
+              textColor: "#707070",
+              btnColor: "#078586",
+            },
+            backgroundImage: {
+              "hero-bg": "url(./images/banner.png)",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- fontAwesome kit  -->
+
+    <script
+      src="https://kit.fontawesome.com/5ae38a5e71.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- custom style  -->
+
+    <style>
+      /* imported fonts  */
+
+      @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Poppins:wght@400;500;600;700;800&display=swap");
+
+      .font-poppins {
+        font-family: "Poppins", sans-serif;
+      }
+      .font-garamond {
+        font-family: "EB Garamond", serif;
+      }
+
+      .heroBg {
+        background-image: url(./images/banner.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 500px;
+      }
+    </style>
+  </head>
+  <body class="font-poppins">
+    <header class="container mx-auto">
+      <!-- start navbar section  -->
+
+      <nav class="navbar bg-base-100">
+        <!-- nav start  -->
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div class="drawer">
+              <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+              <div class="drawer-content">
+                <label
+                  for="my-drawer"
+                  tabindex="0"
+                  class="btn btn-ghost md:hidden"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16"
+                    />
+                  </svg>
+                </label>
+              </div>
+
+              <div class="drawer-side z-10">
+                <label
+                  for="my-drawer"
+                  aria-label="close sidebar"
+                  class="drawer-overlay"
+                ></label>
+
+                <div class="p-4 w-80 min-h-full bg-white py-14">
+                  <a class="text-2xl capitalize font-bold block"
+                    ><span class="text-3xl text-btnColor">M</span>inimatic
+                    <span class="text-3xl text-btnColor">S</span>olution</a
+                  >
+                  <ul class="menu">
+                    <li class="text-btnColor hover:text-btnoolor border-b-2">
+                      <a href="index.html">Home</a>
+                    </li>
+                    <li class="hover:text-btnColor border-b-2">
+                      <a href="about.html">About</a>
+                    </li>
+                    <li class="hover:text-btnColor border-b-2">
+                      <a href="service.html">Service</a>
+                    </li>
+                    <li class="hover:text-btnColor border-b-2">
+                      <a href="contact.html">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a
+            class="text-xl lg:text-2xl capitalize font-semibold lg:font-bold hidden md:block"
+            ><span class="text-3xl text-btnColor">M</span>inimatic
+            <span class="text-3xl text-btnColor">S</span>olution</a
+          >
+        </div>
+        <!-- nav center  -->
+        <div class="navbar-center hidden md:flex">
+          <ul class="flex gap-2 lg:gap-4 font-semibold">
+            <li
+              class="text-btnColor hover:text-btnoolor border-transparent border-b-2 hover:border-btnColor transition duration-500"
+            >
+              <a href="index.html">Home</a>
+            </li>
+            <li
+              class="hover:text-btnColor hover:text-btnoolor border-transparent border-b-2 hover:border-btnColor transition duration-500"
+            >
+              <a href="about.html">About</a>
+            </li>
+            <li
+              class="hover:text-btnColor hover:text-btnoolor border-transparent border-b-2 hover:border-btnColor transition duration-500"
+            >
+              <a href="service.html">Service</a>
+            </li>
+            <li
+              class="hover:text-btnColor hover:text-btnoolor border-transparent border-b-2 hover:border-btnColor transition duration-500"
+            >
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!-- nav end  -->
+        <div class="navbar-end">
+          <button
+            class="btn bg-btnColor text-white rounded-none rounded-tr-lg rounded-bl-lg hover:btn-outline hover:border-btnColor hover:bg-white hover:text-btnColor hover:rounded-none hover:rounded-tl-lg hover:rounded-br-lg transition duration-500"
+          >
+            Get In Touch
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main></main>
+    <footer></footer>
+  </body>
+</html>
