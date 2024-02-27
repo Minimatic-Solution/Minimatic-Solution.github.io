@@ -301,8 +301,8 @@
       </section>
 
       <!-- start about company section  -->
-      <section class="container mx-auto">
-        <div class="grid grid-cols-2">
+      <section class="container mx-auto px-10 lg:px-0">
+        <div class="grid gap-24 lg:gap-0 lg:grid-cols-2">
           <!-- about left content  -->
           <div class="space-y-4">
             <p class="text-btnColor font-semibold">// About Company</p>
@@ -346,9 +346,53 @@
           </div>
 
           <!-- about right img  -->
-          <div>
+          <div class="relative">
             <img src="./images/about.png" alt="" />
-            <div></div>
+            <div>
+              <!-- innovation hr solution  -->
+              <div
+                class="bg-white p-6 shadow-2xl space-y-4 absolute w-[40%] top-0 left-12 rounded"
+              >
+                <img class="mx-auto" src="./images/about-2.png" alt="" />
+                <h2
+                  class="text-[#282f3b] text-3xl font-semibold hover:text-btnColor transition duration-500"
+                >
+                  Innovation HR Solution
+                </h2>
+                <p class="text-[#6d6d6d]">
+                  Except too obtain some work advantages from it but whom has
+                  any rights.
+                </p>
+                <button
+                  class="hover:space-x-4 hover:text-btnColor transition-all duration-300"
+                >
+                  <span>Read More</span>
+                  <i class="fas fa-chevron-right text-sm ml-2"> </i>
+                </button>
+              </div>
+
+              <!-- Leadership development  -->
+              <div
+                class="bg-white p-6 shadow-2xl space-y-4 w-[40%] absolute top-44 right-8 rounded"
+              >
+                <img class="mx-auto" src="./images/about-3.png" alt="" />
+                <h2
+                  class="text-[#282f3b] text-3xl font-semibold hover:text-btnColor transition duration-500"
+                >
+                  Leadership Development
+                </h2>
+                <p class="text-[#6d6d6d]">
+                  Actual teachings of the great explorer of the truth masters
+                  human happiness.
+                </p>
+                <button
+                  class="hover:space-x-4 hover:text-btnColor transition-all duration-300"
+                >
+                  <span>Read More</span>
+                  <i class="fas fa-chevron-right text-sm ml-2"> </i>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
