@@ -56,25 +56,7 @@
         font-family: "EB Garamond", serif;
       }
 
-      .bannerOne {
-        background-image: url(./images/banner-1.jpg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 500px;
-      }
-      .bannerTwo {
-        background-image: url(./images/banner-replace-3-1.jpg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-      }
-      .bannerThree {
-        background-image: url(./images/banner-replace-1-1.jpg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-      }
+      
       .technologyIndex {
         background-image: url(./images/bg-s2-home3.jpg);
         background-size: cover;
@@ -99,227 +81,121 @@
     </style>
   </head>
   <body class="font-poppins">
-    <header class="container mx-auto">
+    <header class=" mx-auto">
       <!-- start navbar section  -->
 
-      <nav class="navbar bg-base-100 py-4">
-        <!-- nav start  -->
-        <div class="navbar-start">
-          <div class="dropdown">
-            <div class="drawer">
-              <input id="my-drawer" type="checkbox" class="drawer-toggle" />
-              <div class="drawer-content">
-                <label
-                  for="my-drawer"
-                  tabindex="0"
-                  class="btn btn-ghost md:hidden"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h8m-8 6h16"
-                    />
-                  </svg>
-                </label>
-              </div>
+      <nav class="navbar py-4 fixed top-0 z-50 bg-black md:opacity-70 shadow-lg w-full transition-opacity duration-500 ">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Navbar Start -->
+            <div class="navbar-start flex items-center ">
+                <div class="dropdown">
+                    <div class="drawer">
+                        <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+                        <div class="drawer-content">
+                            <label for="my-drawer" tabindex="0" class="btn btn-ghost md:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </label>
+                        </div>
 
-              <div class="drawer-side z-10">
-                <label
-                  for="my-drawer"
-                  aria-label="close sidebar"
-                  class="drawer-overlay"
-                ></label>
+                        <div class="drawer-side z-10">
+                            <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
 
-                <div class="p-4 w-80 min-h-full bg-white py-14">
-                  <a class="text-2xl capitalize font-bold block"
-                    ><span class="text-3xl text-btnColor">M</span>inimatic
-                    <span class="text-3xl text-btnColor">S</span>olution</a
-                  >
-                  <ul class="menu">
-                    <li class="text-btnColor hover:text-btnoolor border-b-2">
-                      <a href="index.html">Home</a>
-                    </li>
-                    <li class="hover:text-btnColor border-b-2">
-                      <a href="about.html">About</a>
-                    </li>
-                    <li class="hover:text-btnColor border-b-2">
-                      <a href="service.html">Service</a>
-                    </li>
-                    <li class="hover:text-btnColor border-b-2">
-                      <a href="contact.html">Contact</a>
-                    </li>
-                  </ul>
+                            <div class="p-4 w-80 min-h-full bg-white py-14">
+                                <a class="text-2xl capitalize font-bold block"><span
+                                        class="text-3xl text-btnColor">M</span>inimatic <span
+                                        class="text-3xl text-btnColor">S</span>olution</a>
+                                <ul class="menu">
+                                    <li class="text-btnColor hover:text-btnoolor border-b-2">
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li class="hover:text-btnColor border-b-2">
+                                        <a href="about.html">About</a>
+                                    </li>
+                                    <li class="hover:text-btnColor border-b-2">
+                                        <a href="service.html">Service</a>
+                                    </li>
+                                    <li class="hover:text-btnColor border-b-2">
+                                        <a href="contact.html">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
 
-          <a
-            class="text-xl lg:text-2xl capitalize font-semibold lg:font-bold hidden md:block"
-            ><span class="text-3xl text-btnColor">M</span>inimatic
-            <span class="text-3xl text-btnColor">S</span>olution</a
-          >
+                <a class="text-xl lg:text-2xl capitalize font-semibold lg:font-bold hidden md:block text-white"><span
+                        class="text-3xl text-btnColor">M</span>inimatic <span class="text-3xl text-btnColor">S</span>olution</a>
+            </div>
+            <!-- Navbar Center -->
+            <div class="navbar-center hidden md:flex">
+                <ul class="flex gap-2 lg:gap-4 font-semibold text-white">
+                    <li class="text-btnColor hover:text-btnoolor border-transparent border-b-2 hover:border-btnColor transition duration-500">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="hover:text-btnColor hover:text-btnoolor border-transparent border-b-2 hover:border-btnColor transition duration-500">
+                        <a href="about.html">About</a>
+                    </li>
+                    <li class="hover:text-btnColor hover:text-btnoolor border-transparent border-b-2 hover:border-btnColor transition duration-500">
+                        <a href="service.html">Service</a>
+                    </li>
+                    <li class="hover:text-btnColor hover:text-btnoolor border-transparent border-b-2 hover:border-btnColor transition duration-500">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Navbar End -->
+            <div class="navbar-end text-right">
+                <button class="btn bg-btnColor text-white rounded-none border-none rounded-tr-xl rounded-bl-xl hover:btn-outline hover:border-btnColor hover:bg-white hover:text-btnColor hover:rounded-none hover:rounded-tl-xl hover:rounded-br-xl transition duration-500">
+                    Get In Touch
+                </button>
+            </div>
         </div>
-        <!-- nav center  -->
-        <div class="navbar-center hidden md:flex">
-          <ul class="flex gap-2 lg:gap-4 font-semibold">
-            <li
-              class="text-btnColor hover:text-btnoolor border-transparent border-b-2 hover:border-btnColor transition duration-500"
-            >
-              <a href="index.html">Home</a>
-            </li>
-            <li
-              class="hover:text-btnColor hover:text-btnoolor border-transparent border-b-2 hover:border-btnColor transition duration-500"
-            >
-              <a href="about.html">About</a>
-            </li>
-            <li
-              class="hover:text-btnColor hover:text-btnoolor border-transparent border-b-2 hover:border-btnColor transition duration-500"
-            >
-              <a href="service.html">Service</a>
-            </li>
-            <li
-              class="hover:text-btnColor hover:text-btnoolor border-transparent border-b-2 hover:border-btnColor transition duration-500"
-            >
-              <a href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
-        <!-- nav end  -->
-        <div class="navbar-end">
-          <button
-            class="btn bg-btnColor text-white rounded-none rounded-tr-xl rounded-bl-xl hover:btn-outline hover:border-btnColor hover:bg-white hover:text-btnColor hover:rounded-none hover:rounded-tl-xl hover:rounded-br-xl transition duration-500"
-          >
-            Get In Touch
-          </button>
-        </div>
-      </nav>
+    </nav>
+    
     </header>
 
     <main>
       <!-- start banner section  -->
-      <section class="carousel h-[90vh]">
-        <!-- slider One  -->
+      <section >
+        <div class="relative  h-[100vh]">
+          <img class="w-full h-full"  src="./images/banner-1.jpg" alt="">
+          <!-- <div class="hero-overlay"></div> -->
+          <div class="container text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            
+              <div class="space-y-6 max-w-3xl mx-auto">
 
-        <div id="slide1" class="carousel-item relative w-full">
-          <div class="hero bannerOne h-full">
-            <div class="hero-overlay"></div>
-            <div class="hero-content text-center">
-              <div class="max-w-3xl space-y-6">
                 <p
-                  class="border-2 border-btnColor w-60 mx-auto py-4 rounded-tl-xl rounded-br-xl text-white"
-                >
-                  Our Vission
-                </p>
-                <h2
-                  class="font-extrabold text-3xl md:text-5xl lg:text-7xl text-white leading-tight"
-                >
-                  Powerful Digital Solutions
-                </h2>
-
-                <p class="font-normal text-base text-[#aaafb8] w-[90%] mx-auto">
-                  Duty obligations of business it will frequently occur that
-                  pleasures have to be repudiated and annoyances accepted.
-                </p>
-                <button
-                  class="btn bg-btnColor text-white border-btnColor rounded-none rounded-tr-xl rounded-bl-xl hover:btn-outline hover:border-btnColor hover:bg-white hover:text-btnColor hover:rounded-none hover:rounded-tl-xl hover:rounded-br-xl transition duration-500"
-                >
-                  Read More
-                </button>
-              </div>
-            </div>
-          </div>
-          <div
-            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-          >
-            <a href="#slide3" class="btn btn-circle">❮</a>
-            <a href="#slide2" class="btn btn-circle">❯</a>
-          </div>
-        </div>
-
-        <!-- slider Two  -->
-
-        <div id="slide2" class="carousel-item relative w-full h-full">
-          <div class="hero bannerTwo h-full">
-            <div class="hero-overlay"></div>
-            <div class="hero-content text-neutral-content">
-              <div class="max-w-4xl space-y-6 ml-20 lg:ml-0">
-                <p
-                  class="border-2 border-btnColor w-60 py-4 rounded-tl-xl rounded-br-xl text-white text-center"
-                >
-                  Our Vission
-                </p>
-                <h2
-                  class="font-extrabold text-3xl md:text-5xl lg:text-7xl text-white leading-tight"
-                >
-                  Inspired <br />Performance
-                </h2>
-
-                <p class="font-normal text-base text-[#aaafb8] w-[70%]">
-                  Duty obligations of business it will frequently occur that
-                  pleasures have to be repudiated and annoyances accepted.
-                </p>
-                <button
-                  class="btn bg-btnColor text-white border-btnColor rounded-none rounded-tr-xl rounded-bl-xl hover:btn-outline hover:border-btnColor hover:bg-white hover:text-btnColor hover:rounded-none hover:rounded-tl-xl hover:rounded-br-xl transition duration-500"
-                >
-                  Read More
-                </button>
-              </div>
-            </div>
-          </div>
-          <div
-            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-          >
-            <a href="#slide1" class="btn btn-circle">❮</a>
-            <a href="#slide3" class="btn btn-circle">❯</a>
-          </div>
-        </div>
-
-        <!-- slider Three  -->
-
-        <div id="slide3" class="carousel-item relative w-full h-full">
-          <div class="hero bannerThree h-full">
-            <div class="hero-overlay"></div>
-            <div class="hero-content text-neutral-content">
-              <div class="max-w-4xl space-y-6 text-right mr-20 lg:mr-0">
-                <p
-                  class="border-2 border-btnColor w-60 py-4 rounded-tl-xl rounded-br-xl text-white ml-auto text-center"
+                  class=" border-2 border-btnColor w-60 mx-auto py-4 rounded-tl-xl rounded-br-xl text-white"
                 >
                   Our Vision
                 </p>
-                <h2
-                  class="font-extrabold text-3xl md:text-5xl lg:text-7xl text-white leading-tight"
+                
+  
+             
+                  <h2
+                  class="font-extrabold text-2xl md:text-5xl lg:text-7xl text-white leading-tight "
                 >
-                  Countless <br />Happy Clients
+                  Powerful Digital Solutions
                 </h2>
-
-                <p class="font-normal text-base text-[#aaafb8] w-[70%] ml-auto">
-                  Duty obligations of business it will frequently occur that
-                  pleasures have to be repudiated and annoyances accepted.
-                </p>
+                  <p class="font-normal text-base text-[#aaafb8] w-[90%] mx-auto text-center ">
+                    Duty obligations of business it will frequently occur that
+                    pleasures have to be repudiated and annoyances accepted.
+                  </p>
+                
                 <button
                   class="btn bg-btnColor text-white border-btnColor rounded-none rounded-tr-xl rounded-bl-xl hover:btn-outline hover:border-btnColor hover:bg-white hover:text-btnColor hover:rounded-none hover:rounded-tl-xl hover:rounded-br-xl transition duration-500"
                 >
                   Read More
                 </button>
               </div>
-            </div>
+         
           </div>
-          <div
-            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-          >
-            <a href="#slide2" class="btn btn-circle">❮</a>
-            <a href="#slide1" class="btn btn-circle">❯</a>
-          </div>
-        </div>
+         
+         </div>
       </section>
 
       <!-- start about company section  -->
@@ -1411,5 +1287,6 @@
         </div>
       </div>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
