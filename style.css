@@ -33,3 +33,8 @@
   .transitionEase {
     transition: left 0.5s ease;
   }
+
+
+  .cursor{
+    cursor: arrow !important;
+  }

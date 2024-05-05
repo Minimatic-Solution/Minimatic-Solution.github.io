@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Smooth Scroll initialization
     const scroll = new SmoothScroll('a[href*="#"]', {
-        speed: 800,
+        speed: 400,
         offset: navbarHeight 
     });
 
