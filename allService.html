@@ -85,10 +85,10 @@
     <header class=" mx-auto">
       <!-- start navbar section  -->
 
-      <nav class="navbar py-4 fixed top-0 z-50 bg-black md:opacity-70 shadow-lg w-full transition-opacity duration-500 ">
+      <nav class="navbar py-4 fixed top-0 z-50 bg-black md:opacity-70 shadow-lg w-full transition-opacity duration-500">
         <div class="container mx-auto flex justify-between items-center">
             <!-- Navbar Start -->
-            <div class="navbar-start flex items-center ">
+            <div class="navbar-start flex items-center">
                 <div class="dropdown">
                     <div class="drawer">
                         <input id="my-drawer" type="checkbox" class="drawer-toggle" />
@@ -101,50 +101,49 @@
                                 </svg>
                             </label>
                         </div>
-
                         <div class="drawer-side z-10">
                             <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
-
                             <div class="p-4 w-80 min-h-full bg-white py-14">
-                                <a class="text-2xl capitalize font-bold block"><span
-                                        class="text-3xl text-btnColor">M</span>inimatic <span
+                                <a class="text-2xl capitalize font-bold block"><span class="text-3xl text-btnColor">M</span>inimatic <span
                                         class="text-3xl text-btnColor">S</span>olution</a>
                                 <ul class="menu">
-                                    <li class="hover:text-btnColor border-b-2">
+                                    <!-- Home navigation item with text-btnColor class by default -->
+                                    <li class="text-btnColor hover:text-btnoolor border-b-2">
                                         <a href="index.html">Home</a>
                                     </li>
+                                    <!-- Other navigation items -->
                                     <li class="hover:text-btnColor border-b-2">
-                                        <a href="about.html">About</a>
-                                    </li>
-                                    <li class="text-btnColor hover:text-btnoolor border-b-2">
-                                        <a href="service.html">Service</a>
+                                        <a href="#about">About</a>
                                     </li>
                                     <li class="hover:text-btnColor border-b-2">
-                                        <a href="contact.html">Contact</a>
+                                        <a href="#service">Service</a>
+                                    </li>
+                                    <li class="hover:text-btnColor border-b-2">
+                                        <a href="#contact">Contact</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <a class="text-xl lg:text-2xl capitalize font-semibold lg:font-bold hidden md:block text-white"><span
-                        class="text-3xl text-btnColor">M</span>inimatic <span class="text-3xl text-btnColor">S</span>olution</a>
+                <a class="text-xl lg:text-2xl capitalize font-semibold lg:font-bold hidden md:block text-white">
+                    <span class="text-3xl text-btnColor">M</span>inimatic <span class="text-3xl text-btnColor">S</span>olution
+                </a>
             </div>
             <!-- Navbar Center -->
             <div class="navbar-center hidden md:flex">
                 <ul class="flex gap-2 lg:gap-4 font-semibold text-white">
-                    <li class="hover:text-btnColor hover:text-btnoolor border-transparent border-b-2 hover:border-btnColor transition duration-500">
-                        <a href="index.html">Home</a>
+                    <li class="nav-item  hover:text-btnoolor border-transparent border-b-2 hover:border-btnColor transition duration-500">
+                        <a href="index.html" class="nav-link">Home</a>
                     </li>
-                    <li class="hover:text-btnColor hover:text-btnoolor border-transparent border-b-2 hover:border-btnColor transition duration-500">
-                        <a href="about.html">About</a>
+                    <li class="nav-item hover:text-btnColor hover:text-btnoolor border-transparent border-b-2 hover:border-btnColor transition duration-500">
+                        <a href="#about" class="nav-link">About</a>
                     </li>
-                    <li class="text-btnColor hover:text-btnoolor border-transparent border-b-2 hover:border-btnColor transition duration-500">
-                        <a href="service.html">Service</a>
+                    <li class="nav-item hover:text-btnColor hover:text-btnoolor border-transparent border-b-2 hover:border-btnColor transition duration-500">
+                        <a href="#service" class="nav-link">Service</a>
                     </li>
-                    <li class="hover:text-btnColor hover:text-btnoolor border-transparent border-b-2 hover:border-btnColor transition duration-500">
-                        <a href="contact.html">Contact</a>
+                    <li class="nav-item hover:text-btnColor hover:text-btnoolor border-transparent border-b-2 hover:border-btnColor transition duration-500">
+                        <a href="#contact" class="nav-link">Contact</a>
                     </li>
                 </ul>
             </div>

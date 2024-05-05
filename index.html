@@ -18,7 +18,9 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16/dist/smooth-scroll.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
 
     <!-- tailwind customize  -->
 
@@ -43,52 +45,16 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- custom style  -->
-
-    <style>
-      /* imported fonts  */
-
-      @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Poppins:wght@400;500;600;700;800&display=swap");
-
-      .font-poppins {
-        font-family: "Poppins", sans-serif;
-      }
-      .font-garamond {
-        font-family: "EB Garamond", serif;
-      }
-
-      
-      .technologyIndex {
-        background-image: url(./images/bg-s2-home3.jpg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-      }
-      .buildYourWebsite {
-        background-image: url(./images/bg.jpg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-      }
-      .consultant {
-        background-image: url(./images/consultation.jpg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-      }
-      .transitionEase {
-        transition: left 0.5s ease;
-      }
-    </style>
+  
   </head>
   <body class="font-poppins">
     <header class=" mx-auto">
       <!-- start navbar section  -->
 
-      <nav class="navbar py-4 fixed top-0 z-50 bg-black md:opacity-70 shadow-lg w-full transition-opacity duration-500 ">
+      <nav class="navbar py-4 fixed top-0 z-50 bg-black md:opacity-70 shadow-lg w-full transition-opacity duration-500">
         <div class="container mx-auto flex justify-between items-center">
             <!-- Navbar Start -->
-            <div class="navbar-start flex items-center ">
+            <div class="navbar-start flex items-center">
                 <div class="dropdown">
                     <div class="drawer">
                         <input id="my-drawer" type="checkbox" class="drawer-toggle" />
@@ -101,61 +67,62 @@
                                 </svg>
                             </label>
                         </div>
-
                         <div class="drawer-side z-10">
                             <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
-
                             <div class="p-4 w-80 min-h-full bg-white py-14">
-                                <a class="text-2xl capitalize font-bold block"><span
-                                        class="text-3xl text-btnColor">M</span>inimatic <span
+                                <a class="text-2xl capitalize font-bold block"><span class="text-3xl text-btnColor">M</span>inimatic <span
                                         class="text-3xl text-btnColor">S</span>olution</a>
                                 <ul class="menu">
+                                    <!-- Home navigation item with text-btnColor class by default -->
                                     <li class="text-btnColor hover:text-btnoolor border-b-2">
                                         <a href="index.html">Home</a>
                                     </li>
+                                    <!-- Other navigation items -->
                                     <li class="hover:text-btnColor border-b-2">
-                                        <a href="about.html">About</a>
+                                        <a href="#about">About</a>
                                     </li>
                                     <li class="hover:text-btnColor border-b-2">
-                                        <a href="service.html">Service</a>
+                                        <a href="#service">Service</a>
                                     </li>
                                     <li class="hover:text-btnColor border-b-2">
-                                        <a href="contact.html">Contact</a>
+                                        <a href="#contact">Contact</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <a class="text-xl lg:text-2xl capitalize font-semibold lg:font-bold hidden md:block text-white"><span
-                        class="text-3xl text-btnColor">M</span>inimatic <span class="text-3xl text-btnColor">S</span>olution</a>
+                <a href="index.html" class="text-xl lg:text-2xl capitalize font-semibold lg:font-bold hidden md:block text-white">
+                    <span class="text-3xl text-btnColor">M</span>inimatic <span class="text-3xl text-btnColor">S</span>olution
+                </a>
             </div>
             <!-- Navbar Center -->
             <div class="navbar-center hidden md:flex">
                 <ul class="flex gap-2 lg:gap-4 font-semibold text-white">
-                    <li class="text-btnColor hover:text-btnoolor border-transparent border-b-2 hover:border-btnColor transition duration-500">
-                        <a href="index.html">Home</a>
+                    <li class="nav-item  hover:text-btnoolor border-transparent border-b-2 hover:border-btnColor transition duration-500">
+                        <a href="index.html" class="nav-link">Home</a>
                     </li>
-                    <li class="hover:text-btnColor hover:text-btnoolor border-transparent border-b-2 hover:border-btnColor transition duration-500">
-                        <a href="about.html">About</a>
+                    <li class="nav-item hover:text-btnColor hover:text-btnoolor border-transparent border-b-2 hover:border-btnColor transition duration-500">
+                        <a href="#about" class="nav-link">About</a>
                     </li>
-                    <li class="hover:text-btnColor hover:text-btnoolor border-transparent border-b-2 hover:border-btnColor transition duration-500">
-                        <a href="service.html">Service</a>
+                    <li class="nav-item hover:text-btnColor hover:text-btnoolor border-transparent border-b-2 hover:border-btnColor transition duration-500">
+                        <a href="#service" class="nav-link">Service</a>
                     </li>
-                    <li class="hover:text-btnColor hover:text-btnoolor border-transparent border-b-2 hover:border-btnColor transition duration-500">
-                        <a href="contact.html">Contact</a>
+                    <li class="nav-item hover:text-btnColor hover:text-btnoolor border-transparent border-b-2 hover:border-btnColor transition duration-500">
+                        <a href="#contact" class="nav-link">Contact</a>
                     </li>
                 </ul>
             </div>
             <!-- Navbar End -->
             <div class="navbar-end text-right">
-                <button class="btn bg-btnColor text-white rounded-none border-none rounded-tr-xl rounded-bl-xl hover:btn-outline hover:border-btnColor hover:bg-white hover:text-btnColor hover:rounded-none hover:rounded-tl-xl hover:rounded-br-xl transition duration-500">
+                <button id="getInTouch" class="btn bg-btnColor text-white rounded-none border-none rounded-tr-xl rounded-bl-xl hover:btn-outline hover:border-btnColor hover:bg-white hover:text-btnColor hover:rounded-none hover:rounded-tl-xl hover:rounded-br-xl transition duration-500">
                     Get In Touch
                 </button>
             </div>
         </div>
     </nav>
+    
+    
     
     </header>
 
@@ -183,11 +150,11 @@
                   Powerful Digital Solutions
                 </h2>
                   <p class="font-normal text-base text-[#aaafb8] w-[90%] mx-auto text-center ">
-                    Duty obligations of business it will frequently occur that
-                    pleasures have to be repudiated and annoyances accepted.
+                    In the realm of business, there are unavoidable duties where pleasures must be sacrificed and challenges embraced.
                   </p>
                 
                 <button
+                id="readMoreBtn"
                   class="btn bg-btnColor text-white border-btnColor rounded-none rounded-tr-xl rounded-bl-xl hover:btn-outline hover:border-btnColor hover:bg-white hover:text-btnColor hover:rounded-none hover:rounded-tl-xl hover:rounded-br-xl transition duration-500"
                 >
                   Read More
@@ -200,96 +167,99 @@
       </section>
 
       <!-- start about company section  -->
-      <section class="container mx-auto px-10 xl:px-0 pb-28 pt-16">
-        <div class="grid gap-24 lg:gap-0 lg:grid-cols-2">
-          <!-- about left content  -->
-          <div class="space-y-4">
-            <p class="text-btnColor font-semibold">// About Company</p>
-            <h2 class="text-[#282f3b] text-4xl font-extrabold leading-tight">
-              Your Partner for <br />
-              Software Innovation
-            </h2>
-            <p class="text-[#6d6d6d]">
-              Minimatic Solution is the partner of choice for many of the
-              world’s leading enterprises, SMEs and technology challengers. We
-              help businesses elevate their value through custom software
-              development, product design, QA and consultancy services.
-            </p>
-            <!-- left content bottom  -->
-            <div class="grid md:grid-cols-2 gap-6 pt-6 overflow-hidden">
-              <!-- Experience  -->
-              <div data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-out" class="space-y-4">
-                <i class="fas fa-medal text-4xl text-btnColor"></i>
-                <h5
-                  class="text-[#282f3b] text-2xl font-semibold border-b-4 pb-4"
-                >
-                  Experience
-                </h5>
-                <p class="text-[#6d6d6d]">
-                  Our great team of more than 1400 software experts.
-                </p>
-              </div>
-              <!-- support  -->
-              <div data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-out" class="space-y-4">
-                <i class="fas fa-headset text-4xl text-btnColor"></i>
-                <h5
-                  class="text-[#282f3b] text-2xl font-semibold border-b-4 pb-4"
-                >
-                  Quick Support
-                </h5>
-                <p class="text-[#6d6d6d]">
-                  We’ll help you test bold new ideas while sharing your.
-                </p>
+      <section id="about" class="bg-base-200" >
+        <div class="container mx-auto px-10 xl:px-0 pb-28 pt-16">
+
+          <div class="grid gap-24 lg:gap-0 lg:grid-cols-2">
+            <!-- about left content  -->
+            <div class="space-y-4">
+              <p class="text-btnColor font-semibold">// About Company</p>
+              <h2 class="text-[#282f3b] text-4xl font-extrabold leading-tight">
+                Driving Software <br />
+                Innovation Forward
+              </h2>
+              <p class="text-gray-600">
+                Minimatic Solution is the partner of choice for many of the
+                world’s leading enterprises, SMEs and technology challengers. We
+                help businesses elevate their value through custom software
+                development, product design, QA and consultancy services.
+              </p>
+              <!-- left content bottom  -->
+              <div class="grid md:grid-cols-2 gap-6 pt-6 overflow-hidden">
+                <!-- Experience  -->
+                <div data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-out" class="space-y-4">
+                  <i class="fas fa-medal text-4xl text-btnColor"></i>
+                  <h5
+                    class="text-[#282f3b] text-2xl font-semibold border-b-4 pb-4"
+                  >
+                    Experience
+                  </h5>
+                  <p class="text-gray-600">
+                    Our great team of more than 1400 software experts.
+                  </p>
+                </div>
+                <!-- support  -->
+                <div data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-out" class="space-y-4">
+                  <i class="fas fa-headset text-4xl text-btnColor"></i>
+                  <h5
+                    class="text-[#282f3b] text-2xl font-semibold border-b-4 pb-4"
+                  >
+                    Quick Support
+                  </h5>
+                  <p class="text-gray-600">
+                    We’ll help you test bold new ideas while sharing your.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-
-          <!-- about right img  -->
-          <div class="relative flex flex-col overflow-hidden">
-            <img class="order-2 py-6 md:py-0" src="./images/about.png" alt="" />
-
-            <!-- innovation hr solution  -->
-            <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out"
-              class="bg-white p-6 lg:p-4 xl:p-6 shadow-2xl space-y-4 md:absolute md:w-[40%] top-0 left-12 rounded order-1"
-            >
-              <img class="mx-auto" src="./images/about-2.png" alt="" />
-              <h2
-                class="text-[#282f3b] xl:text-3xl lg:text-2xl md:text-3xl font-semibold hover:text-btnColor transition duration-500"
+  
+            <!-- about right img  -->
+            <div class="relative flex flex-col overflow-hidden">
+              <img class="order-2 py-6 md:py-0" src="./images/about.png" alt="" />
+  
+              <!-- innovation hr solution  -->
+              <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                class="bg-white p-6 lg:p-4 xl:p-6 shadow-2xl space-y-4 md:absolute md:w-[40%] top-0 left-12 rounded order-1"
               >
-                Innovation HR Solution
-              </h2>
-              <p class="text-[#6d6d6d]">
-                Except too obtain some work advantages from it but whom has any
-                rights.
-              </p>
-              <button
-                class="hover:space-x-4 hover:text-btnColor transition-all duration-300"
+                <img class="mx-auto" src="./images/about-2.png" alt="" />
+                <h2
+                  class="text-[#282f3b] xl:text-3xl lg:text-2xl md:text-3xl font-semibold hover:text-btnColor transition duration-500"
+                >
+                  Innovation HR Solution
+                </h2>
+                <p class="text-gray-600">
+                  Unlocking benefits from innovation requires recognizing everyone's rights.
+                </p>
+                <button
+                  id="readMoreBtn2"
+                  class="hover:space-x-4 hover:text-btnColor transition-all duration-300"
+                >
+                  <span>Read More</span>
+                  <i class="fas fa-chevron-right text-sm ml-2"> </i>
+                </button>
+              </div>
+  
+              <!-- Leadership development  -->
+              <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                class="bg-white xl:p-6 lg:p-4 p-6 shadow-2xl space-y-4 md:w-[40%] md:absolute top-44 right-8 rounded order-3"
               >
-                <span>Read More</span>
-                <i class="fas fa-chevron-right text-sm ml-2"> </i>
-              </button>
-            </div>
-
-            <!-- Leadership development  -->
-            <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out"
-              class="bg-white xl:p-6 lg:p-4 p-6 shadow-2xl space-y-4 md:w-[40%] md:absolute top-44 right-8 rounded order-3"
-            >
-              <img class="mx-auto" src="./images/about-3.png" alt="" />
-              <h2
-                class="text-[#282f3b] xl:text-3xl lg:text-2xl md:text-3xl font-semibold hover:text-btnColor transition duration-500"
-              >
-                Leadership Development
-              </h2>
-              <p class="text-[#6d6d6d]">
-                Actual teachings of the great explorer of the truth masters
-                human happiness.
-              </p>
-              <button
-                class="hover:space-x-4 hover:text-btnColor transition-all duration-300"
-              >
-                <span>Read More</span>
-                <i class="fas fa-chevron-right text-sm ml-2"> </i>
-              </button>
+                <img class="mx-auto" src="./images/about-3.png" alt="" />
+                <h2
+                  class="text-[#282f3b] xl:text-3xl lg:text-2xl md:text-3xl font-semibold hover:text-btnColor transition duration-500"
+                >
+                  Leadership Development
+                </h2>
+                <p class="text-gray-600">
+                  True mastery of human happiness lies in embracing the teachings of great explorers of truth.
+                </p>
+                <button
+                  id="readMoreBtn3"
+                  class="hover:space-x-4 hover:text-btnColor transition-all duration-300"
+                >
+                  <span>Read More</span>
+                  <i class="fas fa-chevron-right text-sm ml-2"> </i>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -406,20 +376,21 @@
       </section>
 
       <!-- start our service  -->
-      <section class="bg-base-200 py-16">
+      <section id="service" class="bg-base-200 py-16">
         <div class="container mx-auto space-y-8 px-10 xl:px-0">
           <div class="flex justify-between items-center flex-wrap gap-4">
             <div class="space-y-4">
               <p class="text-btnColor font-semibold">// OUR SERVICE</p>
               <h2
-                class="text-[#282f3b] text-3xl md:text-4xl font-extrabold leading-tight"
+                class="text-[#282f3b] text-3xl md:text-4xl font-extrabold leading-10"
               >
-                We Offer a Wide <br />
-                Variety of IT Services
+              Discover the Depth of
+              <p class="pt-3">Our IT Services Portfolio</p>
               </h2>
             </div>
-            <button
-              class="btn bg-btnColor text-white rounded-none rounded-tr-xl rounded-bl-xl hover:btn-outline hover:border-btnColor hover:bg-white hover:text-btnColor hover:rounded-none hover:rounded-tl-xl hover:rounded-br-xl transition duration-500"
+            <button        
+            onclick="window.location.href='allService.html'"    
+              class="btn bg-btnColor text-white rounded-none rounded-tr-xl rounded-bl-xl hover:btn-outline hover:border-btnColor hover:bg-white hover:text-btnColor hover:rounded-none hover:rounded-tl-xl hover:rounded-br-xl transition duration-500 "
             >
               All Service
             </button>
@@ -428,7 +399,7 @@
             <!-- card one  -->
             <div
             data-aos="zoom-in" data-aos-duration="1200" data-aos-easing="ease-in-out"
-              class="flex flex-col xl:flex-row gap-6 border p-6 rounded-md hover:shadow-lg transition hover:bg-white duration-700"
+              class="flex flex-col xl:flex-row gap-6 border p-6 rounded-xl hover:shadow-lg transition hover:bg-white duration-700"
             >
               <i class="fas fa-laptop-code text-4xl text-btnColor"></i>
 
@@ -436,7 +407,7 @@
                 <h3 class="text-[#282f3b] text-2xl font-bold">
                   Web Development
                 </h3>
-                <p class="text-[#6d6d6d]">
+                <p class="text-gray-600">
                   We carry more than just good coding skills. Our experience
                   makes us stand out from other web development.
                 </p>
@@ -445,14 +416,14 @@
             <!-- card Two  -->
             <div
             data-aos="zoom-in" data-aos-duration="1400" data-aos-easing="ease-in-out"
-              class="flex flex-col xl:flex-row gap-6 border p-6 rounded-md hover:shadow-lg transition hover:bg-white duration-700"
+              class="flex flex-col xl:flex-row gap-6 border p-6 rounded-xl hover:shadow-lg transition hover:bg-white duration-700"
             >
               <i class="fas fa-mobile-alt text-4xl text-btnColor"></i>
               <div class="space-y-4">
                 <h3 class="text-[#282f3b] text-2xl font-bold">
                   Mobile Development
                 </h3>
-                <p class="text-[#6d6d6d]">
+                <p class="text-gray-600">
                   Create complex enterprise software, ensure reliable software
                   integration, modernise your legacy system.
                 </p>
@@ -461,13 +432,13 @@
             <!-- card Three  -->
             <div
             data-aos="zoom-in" data-aos-duration="1600" data-aos-easing="ease-in-out"
-              class="flex flex-col xl:flex-row gap-6 border p-6 rounded-md hover:shadow-lg transition hover:bg-white duration-700"
+              class="flex flex-col xl:flex-row gap-6 border p-6 rounded-xl hover:shadow-lg transition hover:bg-white duration-700"
             >
               <i class="fas fa-desktop text-4xl text-btnColor"></i>
 
               <div class="space-y-4">
                 <h3 class="text-[#282f3b] text-2xl font-bold">UI/UX Design</h3>
-                <p class="text-[#6d6d6d]">
+                <p class="text-gray-600">
                   Build the product you need on time with an experienced team
                   that uses a clear and effective design process.
                 </p>
@@ -476,13 +447,13 @@
             <!-- card Four  -->
             <div
             data-aos="zoom-in" data-aos-duration="1800" data-aos-easing="ease-in-out"
-              class="flex flex-col xl:flex-row gap-6 border p-6 rounded-md hover:shadow-lg transition hover:bg-white duration-700"
+              class="flex flex-col xl:flex-row gap-6 border p-6 rounded-xl hover:shadow-lg transition hover:bg-white duration-700"
             >
               <i class="fas fa-bug text-4xl text-btnColor"></i>
 
               <div class="space-y-4">
                 <h3 class="text-[#282f3b] text-2xl font-bold">QA & Testing</h3>
-                <p class="text-[#6d6d6d]">
+                <p class="text-gray-600">
                   Turn to our experts to perform comprehensive, multi-stage
                   testing and auditing of your software.
                 </p>
@@ -491,7 +462,7 @@
             <!-- card Five  -->
             <div
             data-aos="zoom-in" data-aos-duration="2000" data-aos-easing="ease-in-out"
-              class="flex flex-col xl:flex-row gap-6 border p-6 rounded-md hover:shadow-lg transition hover:bg-white duration-700"
+              class="flex flex-col xl:flex-row gap-6 border p-6 rounded-xl hover:shadow-lg transition hover:bg-white duration-700"
             >
               <i class="fas fa-chart-line text-4xl text-btnColor"></i>
 
@@ -499,7 +470,7 @@
                 <h3 class="text-[#282f3b] text-2xl font-bold">
                   IT Counsultancy
                 </h3>
-                <p class="text-[#6d6d6d]">
+                <p class="text-gray-600">
                   Trust our top minds to eliminate workflow pain points,
                   implement new tech, and consolidate app portfolios.
                 </p>
@@ -508,7 +479,7 @@
             <!-- card Six  -->
             <div
             data-aos="zoom-in" data-aos-duration="2200" data-aos-easing="ease-in-out"
-              class="flex flex-col xl:flex-row gap-6 border p-6 rounded-md hover:shadow-lg transition hover:bg-white duration-700"
+              class="flex flex-col xl:flex-row gap-6 border p-6 rounded-xl hover:shadow-lg transition hover:bg-white duration-700"
             >
               <i class="fas fa-users text-4xl text-btnColor"></i>
 
@@ -516,12 +487,32 @@
                 <h3 class="text-[#282f3b] text-2xl font-bold">
                   Dedicated Team
                 </h3>
-                <p class="text-[#6d6d6d]">
+                <p class="text-gray-600">
                   Over the past decade, our customers succeeded by leveraging
                   Intellectsoft’s process of building, motivating.
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- start consultation  -->
+      <section class="py-28 consultant overflow-hidden">
+        <div data-aos="fade-up" data-aos-duration="1400" data-aos-easing="ease-in-out"  class="flex justify-center items-center">
+          <div class="text-center space-y-6">
+            <p class="text-white font-semibold">
+              // Drop us a line! We are here to answer your questions 24/7
+            </p>
+            <h2 class="text-white text-4xl lg:text-7xl font-bold">
+              NEED A CONSULTATION?
+            </h2>
+            <button
+              class="btn bg-btnColor text-white border-btnColor rounded-none rounded-tr-xl rounded-bl-xl hover:btn-outline hover:border-btnColor hover:bg-white hover:text-btnColor hover:rounded-none hover:rounded-tl-xl hover:rounded-br-xl transition duration-500"
+            >
+              Contact Us
+            </button>
           </div>
         </div>
       </section>
@@ -534,9 +525,9 @@
             <h2
               class="text-[#282f3b] text-3xl md:text-4xl font-extrabold leading-tight"
             >
-              Professional Individuals
+            Meet Our Expert Team
             </h2>
-            <p class="text-[#6d6d6d] w-[50%]">
+            <p class="text-gray-600 w-[50%]">
               Our power of choice is untrammelled and when nothing prevents
               being able to do what we like best every pleasure.
             </p>
@@ -884,6 +875,8 @@
         </div>
       </section>
 
+      
+
       <!-- start Q&A  -->
       <section class="bg-[#F5F6F9] py-16">
         <div class="container mx-auto px-10 xl:px-0 space-y-8">
@@ -894,7 +887,7 @@
             >
               Question & Answer
             </h2>
-            <p class="text-[#6d6d6d] w-[50%]">
+            <p class="text-gray-600 w-[50%]">
               Check our FAQs for quick answers to frequently asked questions we
               receive. If you have other questions write.
             </p>
@@ -938,33 +931,29 @@
 
             <div class="space-y-6 overflow-hidden">
               <div data-aos="fade-up" data-aos-duration="1200" data-aos-easing="ease-in-out"
-                class="collapse collapse-plus bg-white shadow-md hover:shadow-xl border-r border-dotted border-b border-btnColor"
+                class="collapse collapse-plus bg-white shadow-md hover:shadow-xl "
               >
                 <input type="radio" name="my-accordion-3" checked="checked" />
                 <div class="collapse-title text-xl font-medium text-[#282f3b]">
-                  1. Are application fee waivers available?
+                  1. What industries do you specialize in?
                 </div>
                 <div class="collapse-content">
-                  <p class="text-[#6d6d6d]">
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form, by injected humour, .
+                  <p class="text-gray-600">
+                    We specialize in providing IT solutions across various industries, including healthcare, finance, e-commerce, and more. Our expertise spans diverse sectors to cater to the unique needs of each client.
                   </p>
                 </div>
               </div>
               <div
               data-aos="fade-up" data-aos-duration="1400" data-aos-easing="ease-in-out"
-                class="collapse collapse-plus bg-white shadow-md hover:shadow-xl"
+                class="collapse collapse-plus bg-white shadow-md hover:shadow-xl "
               >
                 <input type="radio" name="my-accordion-3" />
                 <div class="collapse-title text-xl font-medium text-[#282f3b]">
-                  2. Are application fee waivers available?
+                  2. How do you ensure the security of our data?
                 </div>
                 <div class="collapse-content">
-                  <p class="text-[#6d6d6d]">
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form, by injected humour, .
+                  <p class="text-gray-600">
+                    Security is our top priority. We implement robust encryption protocols, regularly update our security measures, and adhere to industry best practices to safeguard your data against potential threats.
                   </p>
                 </div>
               </div>
@@ -974,13 +963,11 @@
               >
                 <input type="radio" name="my-accordion-3" />
                 <div class="collapse-title text-xl font-medium text-[#282f3b]">
-                  3. Are application fee waivers available?
+                  3. Can you customize your services to fit our specific requirements?
                 </div>
                 <div class="collapse-content">
-                  <p class="text-[#6d6d6d]">
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form, by injected humour, .
+                  <p class="text-gray-600">
+                    Absolutely! We understand that every business is unique. That's why we offer customizable solutions tailored to your specific needs and objectives. Our team works closely with you to deliver personalized services that align with your goals.
                   </p>
                 </div>
               </div>
@@ -990,13 +977,11 @@
               >
                 <input type="radio" name="my-accordion-3" />
                 <div class="collapse-title text-xl font-medium text-[#282f3b]">
-                  4. Are application fee waivers available?
+                  4. What sets your team apart from other IT service providers?
                 </div>
                 <div class="collapse-content">
-                  <p class="text-[#6d6d6d]">
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form, by injected humour, .
+                  <p class="text-gray-600">
+                    Our team comprises highly skilled professionals with extensive experience in the IT industry. We're passionate about innovation and dedicated to delivering exceptional results. With our collaborative approach and commitment to excellence, we strive to exceed your expectations.
                   </p>
                 </div>
               </div>
@@ -1006,13 +991,11 @@
               >
                 <input type="radio" name="my-accordion-3" />
                 <div class="collapse-title text-xl font-medium text-[#282f3b]">
-                  5. Are application fee waivers available?
+                  5. How can we get started with your services?
                 </div>
                 <div class="collapse-content">
-                  <p class="text-[#6d6d6d]">
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form, by injected humour, .
+                  <p class="text-gray-600">
+                    Getting started with us is simple. Reach out to our team, and we'll schedule a consultation to discuss your requirements in detail. From there, we'll develop a customized plan tailored to your needs and initiate the process to bring your vision to life.
                   </p>
                 </div>
               </div>
@@ -1021,27 +1004,45 @@
         </div>
       </section>
 
-      <!-- start consultation  -->
-      <section class="py-28 consultant overflow-hidden">
-        <div data-aos="fade-up" data-aos-duration="1400" data-aos-easing="ease-in-out"  class="flex justify-center items-center">
-          <div class="text-center space-y-6">
-            <p class="text-white font-semibold">
-              // Drop us a line! We are here to answer your questions 24/7
-            </p>
-            <h2 class="text-white text-4xl lg:text-7xl font-bold">
-              NEED A CONSULTATION?
-            </h2>
-            <button
-              class="btn bg-btnColor text-white border-btnColor rounded-none rounded-tr-xl rounded-bl-xl hover:btn-outline hover:border-btnColor hover:bg-white hover:text-btnColor hover:rounded-none hover:rounded-tl-xl hover:rounded-br-xl transition duration-500"
-            >
-              Contact Us
-            </button>
+       <!-- start mission and vision  -->
+       <section id="missionVision">
+        <div class="flex flex-wrap text-white">
+          <div class="w-1/2 bg-[#1c1c1c] py-20"> 
+            <div class="px-48 space-y-4">
+              <h2 class="text-4xl">Mission</h2>
+              <p class="">
+                We're on a mission to equip every enterprise with digital management solutions, empowering them to maximize efficiency through advanced technology. </p>
+  
+              <p> Our goal is to dispel misconceptions about digital management systems, ensuring seamless adoption and integration for our clients.</p>
+  
+              <p> Specializing in tailored software solutions, mobile apps, websites, and theme design, we provide customized services to drive success for businesses of all sizes.
+              </p>
+            </div>
+          </div>
+            
+          <div class="w-1/2 bg-[#282f3b] py-10">
+  
+            <div class="px-48 space-y-4" >
+              <h2 class="text-4xl">Vision</h2>
+              <p>Our vision is to ensure every enterprise has access to digital management solutions, fostering widespread adoption of advanced technologies. </p>
+  
+              <p> We aim to debunk misconceptions surrounding digital management systems, leveraging cutting-edge technology and automation to accelerate business growth. </p> 
+  
+              <p> We're dedicated to crafting customized software solutions, mobile apps, websites, and themes, catering to the diverse needs of our clients.
+              </p>
+            </div>
+          </div>
+          
+  
+           
+            
           </div>
         </div>
       </section>
 
+
       <!-- start contact  -->
-      <section class="bg-base-100">
+      <section id="contact" class="bg-base-100">
         <div class="container mx-auto py-16 px-10 xl:px-0">
           <div class="grid lg:grid-cols-2 gap-6">
             <div class="shadow-2xl rounded-md p-6 order-last lg:order-first">
@@ -1123,7 +1124,7 @@
                 >
                   Reach Our Expert Team
                 </h2>
-                <p class="text-[#6d6d6d]">
+                <p class="text-gray-600">
                   Send a message through given form, If your enquiry is time
                   sensitive please use below contact details.
                 </p>
@@ -1142,7 +1143,7 @@
                     <h2 class="text-[#282f3b] text-2xl font-bold">
                       Post Address
                     </h2>
-                    <p class="text-[#6d6d6d]">
+                    <p class="text-gray-600">
                       280 Granite Run Drive Suite #200 Lancaster, PA 1760
                     </p>
                   </div>
@@ -1161,7 +1162,7 @@
                     <h2 class="text-[#282f3b] text-2xl font-bold">
                       General Enquires
                     </h2>
-                    <p class="text-[#6d6d6d]">
+                    <p class="text-gray-600">
                       Phone: +98 060 712 34 & Email: sendmail@qetus.com
                     </p>
                   </div>
@@ -1180,7 +1181,7 @@
                     <h2 class="text-[#282f3b] text-2xl font-bold">
                       Operation Hours
                     </h2>
-                    <p class="text-[#6d6d6d]">
+                    <p class="text-gray-600">
                       Sun-Thursday: 09.00 to 07.00 (Friday: Closed)
                     </p>
                   </div>
