@@ -69,3 +69,35 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector("form");
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const email = form.querySelector('input[type="email"]').value;
+    // Here you would typically send this email to your server or email service provider
+    console.log("Subscription email:", email);
+    alert("Thank you for subscribing!");
+    form.reset();
+  });
+});
+
+// Preloader
+window.addEventListener("load", function () {
+  const preloader = document.querySelector(".preloader");
+  // Add hidden class to trigger fade-out
+  preloader.classList.add("preloader-hidden");
+
+  // Remove preloader after animation
+  setTimeout(() => {
+    preloader.style.display = "none";
+  }, 500); // Match the transition duration
+});
+
+// Optional: Hide preloader if page takes too long to load
+setTimeout(function () {
+  const preloader = document.querySelector(".preloader");
+  if (preloader) {
+    preloader.style.display = "none";
+  }
+}, 3000); // Maximum 3 seconds loading time
