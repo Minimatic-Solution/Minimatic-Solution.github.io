@@ -47,10 +47,21 @@
 
   
   </head>
-  <body class="font-poppins">
-    <div class="preloader">
-      <div class="loader"></div>
-  </div>
+  <div class="preloader">
+    <div class="loader">
+      <svg class="spinner" viewBox="0 0 100 100">
+        <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#078586" />
+                <stop offset="100%" stop-color="#04b4b4" />
+            </linearGradient>
+        </defs>
+        <circle class="path" cx="50" cy="50" r="45" fill="none" stroke-width="5"></circle>
+    </svg>
+        <img src="./images/logo.webp" class="loader-logo" alt="logo">
+        <div class="loading-text">Loading<span class="loading-dots"></span></div>
+    </div>
+</div>
     <header class=" mx-auto">
       <!-- start navbar section  -->
 

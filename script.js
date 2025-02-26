@@ -85,19 +85,25 @@ document.addEventListener("DOMContentLoaded", function () {
 // Preloader
 window.addEventListener("load", function () {
   const preloader = document.querySelector(".preloader");
-  // Add hidden class to trigger fade-out
+  // Add smooth fade-out
   preloader.classList.add("preloader-hidden");
 
-  // Remove preloader after animation
+  // Add percentage loader (optional)
+  let percentage = 0;
+  const loadingText = document.querySelector(".loading-text");
+  const interval = setInterval(() => {
+    percentage = Math.min(percentage + Math.random() * 15, 100);
+    loadingText.textContent = `Loading ${Math.floor(percentage)}%`;
+    if (percentage >= 100) clearInterval(interval);
+  }, 200);
+
   setTimeout(() => {
     preloader.style.display = "none";
-  }, 500); // Match the transition duration
+  }, 1000);
 });
 
-// Optional: Hide preloader if page takes too long to load
-setTimeout(function () {
+// Fallback timeout
+setTimeout(() => {
   const preloader = document.querySelector(".preloader");
-  if (preloader) {
-    preloader.style.display = "none";
-  }
-}, 3000); // Maximum 3 seconds loading time
+  if (preloader) preloader.style.display = "none";
+}, 4000);
