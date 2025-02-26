@@ -47,21 +47,25 @@
 
   
   </head>
-  <div class="preloader">
-    <div class="loader">
-      <svg class="spinner" viewBox="0 0 100 100">
-        <defs>
-            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#078586" />
-                <stop offset="100%" stop-color="#04b4b4" />
-            </linearGradient>
-        </defs>
-        <circle class="path" cx="50" cy="50" r="45" fill="none" stroke-width="5"></circle>
-    </svg>
-        <img src="./images/minimatic-icon.png" class="loader-logo" alt="logo">
-        <div class="loading-text">Loading<span class="loading-dots"></span></div>
+  <body>
+
+    <!-- preloader  -->
+
+    <div class="preloader">
+      <div class="loader">
+        <svg class="spinner" viewBox="0 0 100 100">
+          <defs>
+              <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#078586" />
+                  <stop offset="100%" stop-color="#04b4b4" />
+              </linearGradient>
+          </defs>
+          <circle class="path" cx="50" cy="50" r="45" fill="none" stroke-width="5"></circle>
+        </svg>
+          <img src="./images/minimatic-icon.png" class="loader-logo" alt="logo">
+          <div class="loading-text">Loading<span class="loading-dots"></span></div>
+      </div>
     </div>
-</div>
     <header class=" mx-auto">
       <!-- start navbar section  -->
 
@@ -89,7 +93,7 @@
                                 <ul class="menu">
                                     <!-- Home navigation item with text-btnColor class by default -->
                                     <li class="text-btnColor hover:text-btnoolor border-b-2">
-                                        <a href="index.html">Home</a>
+                                        <a href="#home">Home</a>
                                     </li>
                                     <!-- Other navigation items -->
                                     <li class="hover:text-btnColor border-b-2">
@@ -106,7 +110,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="index.html" class="text-xl lg:text-2xl capitalize font-semibold lg:font-bold hidden md:block text-white">
+                <a href="#home" class="text-xl lg:text-2xl capitalize font-semibold lg:font-bold hidden md:block text-white">
                     <span class="text-3xl text-btnColor">M</span>inimatic <span class="text-3xl text-btnColor">S</span>olution
                 </a>
             </div>
@@ -114,7 +118,7 @@
             <div class="navbar-center hidden md:flex">
                 <ul class="flex gap-2 lg:gap-4 font-semibold text-white">
                     <li class="nav-item  hover:text-btnoolor border-transparent border-b-2 hover:border-btnColor transition duration-500">
-                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="#home" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item hover:text-btnColor hover:text-btnoolor border-transparent border-b-2 hover:border-btnColor transition duration-500">
                         <a href="#about" class="nav-link">About</a>
@@ -129,7 +133,7 @@
             </div>
             <!-- Navbar End -->
             <div class="navbar-end text-right">
-                <button id="getInTouch" class="btn bg-btnColor text-white rounded-none border-none rounded-tr-xl rounded-bl-xl hover:btn-outline hover:border-btnColor hover:bg-white hover:text-btnColor hover:rounded-none hover:rounded-tl-xl hover:rounded-br-xl transition duration-500">
+                <button id="getInTouch" class="btn bg-btnColor text-white rounded-none border-none rounded-tr-xl rounded-bl-xl hover:btn-outline hover:border-btnColor hover:bg-white hover:text-btnColor hover:rounded-none hover:rounded-tl-xl hover:rounded-br-xl transition duration-500 scrollToContactBtn">
                     Get In Touch
                 </button>
             </div>
@@ -142,7 +146,7 @@
 
     <main>
       <!-- start banner section  -->
-      <section >
+      <section id="home">
         <div class="relative  h-[100vh]">
           <img class="w-full h-full"  src="./images/banner-1.jpg" alt="">
           <!-- <div class="hero-overlay"></div> -->
@@ -168,8 +172,7 @@
                   </p>
                 
                 <button
-                id="readMoreBtn"
-                  class="btn bg-btnColor text-white border-btnColor rounded-none rounded-tr-xl rounded-bl-xl hover:btn-outline hover:border-btnColor hover:bg-white hover:text-btnColor hover:rounded-none hover:rounded-tl-xl hover:rounded-br-xl transition duration-500"
+                  class="btn bg-btnColor text-white border-btnColor rounded-none rounded-tr-xl rounded-bl-xl hover:btn-outline hover:border-btnColor hover:bg-white hover:text-btnColor hover:rounded-none hover:rounded-tl-xl hover:rounded-br-xl transition duration-500 scrollToMissionVisionBtn"
                 >
                   Read More
                 </button>
@@ -245,8 +248,7 @@
                   Unlocking benefits from innovation requires recognizing everyone's rights.
                 </p>
                 <button
-                  id="readMoreBtn2"
-                  class="hover:space-x-4 hover:text-btnColor transition-all duration-300"
+                  class="hover:space-x-4 hover:text-btnColor transition-all duration-300 scrollToMissionVisionBtn"
                 >
                   <span>Read More</span>
                   <i class="fas fa-chevron-right text-sm ml-2"> </i>
@@ -267,8 +269,7 @@
                   True mastery of human happiness lies in embracing the teachings of great explorers of truth.
                 </p>
                 <button
-                  id="readMoreBtn3"
-                  class="hover:space-x-4 hover:text-btnColor transition-all duration-300"
+                  class="hover:space-x-4 hover:text-btnColor transition-all duration-300 scrollToMissionVisionBtn"
                 >
                   <span>Read More</span>
                   <i class="fas fa-chevron-right text-sm ml-2"> </i>
@@ -403,8 +404,7 @@
               </h2>
             </div>
             <button        
-            onclick="window.location.href='allService.html'"    
-              class="btn bg-btnColor text-white rounded-none rounded-tr-xl rounded-bl-xl hover:btn-outline hover:border-btnColor hover:bg-white hover:text-btnColor hover:rounded-none hover:rounded-tl-xl hover:rounded-br-xl transition duration-500 "
+              class="btn bg-btnColor text-white rounded-none rounded-tr-xl rounded-bl-xl hover:btn-outline hover:border-btnColor hover:bg-white hover:text-btnColor hover:rounded-none hover:rounded-tl-xl hover:rounded-br-xl transition duration-500 scrollToHomeBtn"
             >
               All Service
             </button>
@@ -523,7 +523,7 @@
               NEED A CONSULTATION?
             </h2>
             <button
-              class="btn bg-btnColor text-white border-btnColor rounded-none rounded-tr-xl rounded-bl-xl hover:btn-outline hover:border-btnColor hover:bg-white hover:text-btnColor hover:rounded-none hover:rounded-tl-xl hover:rounded-br-xl transition duration-500"
+              class="btn bg-btnColor text-white border-btnColor rounded-none rounded-tr-xl rounded-bl-xl hover:btn-outline hover:border-btnColor hover:bg-white hover:text-btnColor hover:rounded-none hover:rounded-tl-xl hover:rounded-br-xl transition duration-500 scrollToContactBtn"
             >
               Contact Us
             </button>
@@ -562,7 +562,7 @@
                   class="absolute inset-0 bg-black opacity-0 hover:opacity-70 transition-opacity flex items-center justify-center rounded-md h-96 duration-1000"
                 >
                   <button
-                    class="btn bg-btnColor text-white border-btnColor rounded-none rounded-tr-xl rounded-bl-xl hover:btn-outline hover:border-btnColor hover:bg-white hover:text-btnColor hover:rounded-none hover:rounded-tl-xl hover:rounded-br-xl transition duration-500"
+                    class="btn bg-btnColor text-white border-btnColor rounded-none rounded-tr-xl rounded-bl-xl hover:btn-outline hover:border-btnColor hover:bg-white hover:text-btnColor hover:rounded-none hover:rounded-tl-xl hover:rounded-br-xl transition duration-500 scrollToContactBtn"
                   >
                     Contact
                   </button>
@@ -579,7 +579,7 @@
                   class="absolute inset-0 bg-black opacity-0 hover:opacity-70 transition-opacity flex items-center justify-center h-96 rounded-md"
                 >
                   <button
-                    class="btn bg-btnColor text-white border-btnColor rounded-none rounded-tr-xl rounded-bl-xl hover:btn-outline hover:border-btnColor hover:bg-white hover:text-btnColor hover:rounded-none hover:rounded-tl-xl hover:rounded-br-xl transition duration-500"
+                    class="btn bg-btnColor text-white border-btnColor rounded-none rounded-tr-xl rounded-bl-xl hover:btn-outline hover:border-btnColor hover:bg-white hover:text-btnColor hover:rounded-none hover:rounded-tl-xl hover:rounded-br-xl transition duration-500 scrollToContactBtn"
                   >
                     Contact
                   </button>
@@ -716,7 +716,7 @@
                 <div class="text-sm text-btnColor font-semibold mb-2">Web Development</div>
                 <h3 class="text-xl font-bold text-gray-800 mb-2">E-commerce Platform Overhaul</h3>
                 <p class="text-gray-600 mb-4">Redesigned and optimized a major e-commerce site, increasing conversion rates by 35%.</p>
-                <a href="#" class="inline-flex items-center text-btnColor hover:text-btnColor transition-colors duration-200">
+                <a href="#home" class="inline-flex items-center text-btnColor hover:text-btnColor transition-colors duration-200">
                   Learn More 
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
@@ -732,7 +732,7 @@
                 <div class="text-sm text-btnColor font-semibold mb-2">Mobile Development</div>
                 <h3 class="text-xl font-bold text-gray-800 mb-2">FinTech Mobile App</h3>
                 <p class="text-gray-600 mb-4">Developed a secure and user-friendly mobile banking application for a leading financial institution.</p>
-                <a href="#" class="inline-flex items-center text-btnColor hover:text-btnColor transition-colors duration-200">
+                <a href="#home" class="inline-flex items-center text-btnColor hover:text-btnColor transition-colors duration-200">
                   Learn More 
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
@@ -748,7 +748,7 @@
                 <div class="text-sm text-btnColor font-semibold mb-2">AI & Machine Learning</div>
                 <h3 class="text-xl font-bold text-gray-800 mb-2">AI-Powered Customer Service Bot</h3>
                 <p class="text-gray-600 mb-4">Implemented an AI chatbot that reduced customer service response times by 60%.</p>
-                <a href="#" class="inline-flex items-center text-btnColor hover:text-btnColor transition-colors duration-200">
+                <a href="#home" class="inline-flex items-center text-btnColor hover:text-btnColor transition-colors duration-200">
                   Learn More 
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
@@ -758,7 +758,7 @@
             </div>
           </div>
           <div class="text-center mt-12">
-            <button class="btn bg-btnColor text-white rounded-none rounded-tr-xl rounded-bl-xl hover:btn-outline hover:border-btnColor hover:bg-white hover:text-btnColor hover:rounded-none hover:rounded-tl-xl hover:rounded-br-xl transition duration-500">
+            <button class="btn bg-btnColor text-white rounded-none rounded-tr-xl rounded-bl-xl hover:btn-outline hover:border-btnColor hover:bg-white hover:text-btnColor hover:rounded-none hover:rounded-tl-xl hover:rounded-br-xl transition duration-500 scrollToHomeBtn">
               View All Projects
             </button>
           </div>
@@ -841,7 +841,7 @@
                   </ul>
                 </div>
                 <div class="p-8 bg-gray-50">
-                  <button class="w-full py-3 px-6 bg-btnColor text-white font-semibold rounded-lg shadow-md hover:bg-btnColor-dark focus:outline-none focus:ring-2 focus:ring-btnColor focus:ring-opacity-75 transition duration-300">
+                  <button class="w-full py-3 px-6 bg-btnColor text-white font-semibold rounded-lg shadow-md hover:bg-btnColor-dark focus:outline-none focus:ring-2 focus:ring-btnColor focus:ring-opacity-75 transition duration-300 scrollToHomeBtn">
                     Get Started
                   </button>
                 </div>
@@ -865,7 +865,7 @@
                   </ul>
                 </div>
                 <div class="p-8 bg-gray-50">
-                  <button class="w-full py-3 px-6 bg-btnColor text-white font-semibold rounded-lg shadow-md hover:bg-btnColor-dark focus:outline-none focus:ring-2 focus:ring-btnColor focus:ring-opacity-75 transition duration-300">
+                  <button class="w-full py-3 px-6 bg-btnColor text-white font-semibold rounded-lg shadow-md hover:bg-btnColor-dark focus:outline-none focus:ring-2 focus:ring-btnColor focus:ring-opacity-75 transition duration-300 scrollToHomeBtn">
                     Get Started
                   </button>
                 </div>
@@ -888,7 +888,7 @@
                   </ul>
                 </div>
                 <div class="p-8 bg-gray-50">
-                  <button class="w-full py-3 px-6 bg-btnColor text-white font-semibold rounded-lg shadow-md hover:bg-btnColor-dark focus:outline-none focus:ring-2 focus:ring-btnColor focus:ring-opacity-75 transition duration-300">
+                  <button class="w-full py-3 px-6 bg-btnColor text-white font-semibold rounded-lg shadow-md hover:bg-btnColor-dark focus:outline-none focus:ring-2 focus:ring-btnColor focus:ring-opacity-75 transition duration-300 scrollToHomeBtn">
                     Get Started
                   </button>
                 </div>
