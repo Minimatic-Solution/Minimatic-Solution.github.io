@@ -919,6 +919,7 @@
                   </div>
                   <input
                     type="text"
+                    required
                     placeholder="Enter your name...."
                     class="input input-bordered border-btnColor w-full focus:outline-none"
                   />
@@ -934,6 +935,7 @@
                   </div>
                   <input
                     type="email"
+                    required
                     placeholder="Enter your email...."
                     class="input input-bordered border-btnColor w-full focus:outline-none"
                   />
@@ -949,6 +951,7 @@
                   </div>
                   <input
                     type="text"
+                    required
                     placeholder="Enter your subject...."
                     class="input input-bordered w-full border-btnColor focus:outline-none"
                   />
@@ -965,6 +968,7 @@
 
                   <textarea
                     rows="4"
+                    required
                     class="textarea textarea-bordered border-btnColor focus:outline-none"
                     placeholder="Enter your message...."
                   ></textarea>
@@ -1005,7 +1009,7 @@
                       Post Address
                     </h2>
                     <p class="text-gray-600">
-                      280 Granite Run Drive Suite #200 Lancaster, PA 1760
+                      3rd ploot, Padma Abasik, Rajshahi, PA 6000
                     </p>
                   </div>
                 </div>
@@ -1024,7 +1028,7 @@
                       General Enquires
                     </h2>
                     <p class="text-gray-600">
-                      Phone: +98 060 712 34 & Email: sendmail@qetus.com
+                      Phone: +98 060 712 34 & Email: contact@minimaticsolutions.com
                     </p>
                   </div>
                 </div>
@@ -1161,6 +1165,16 @@
         </div>
       </div>
     </footer>
+    <!-- Toast -->
+    <div id="toast" class="fixed bottom-4 right-4 hidden items-center p-4 mb-4 bg-white rounded-lg shadow-lg border border-gray-200 transition-opacity duration-300" role="alert">
+      <div class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 bg-btnColor rounded-lg">
+          <i class="fas fa-check text-white"></i>
+      </div>
+      <div class="ml-3 text-sm font-normal">Thank you for subscribing!</div>
+      <button type="button" class="ml-auto -mx-1.5 -my-1.5 bg-white text-gray-400 hover:text-gray-900 rounded-lg p-1.5 hover:bg-gray-100 inline-flex h-8 w-8" onclick="hideToast()">
+          <i class="fas fa-times"></i>
+      </button>
+    </div>
     <script src="./script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

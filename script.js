@@ -106,3 +106,57 @@ setTimeout(() => {
   const preloader = document.querySelector(".preloader");
   if (preloader) preloader.style.display = "none";
 }, 4000);
+
+// Toast Notification Function
+function showToast(message) {
+  const toast = document.getElementById("toast");
+  const toastMessage = toast.querySelector(".text-sm");
+
+  // Set the new message
+  toastMessage.textContent = message;
+
+  // Show toast
+  toast.classList.remove("hidden");
+  toast.classList.add("flex");
+
+  // Auto-hide after 3 seconds
+  setTimeout(() => {
+    toast.classList.remove("flex");
+    toast.classList.add("hidden");
+  }, 3000);
+}
+
+// Subscription and Contact Form Handler
+document.addEventListener("DOMContentLoaded", function () {
+  const forms = document.querySelectorAll("form");
+
+  forms.forEach((form) => {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      // Get form input values
+      const emailInput = form.querySelector('input[type="email"]');
+      const email = emailInput ? emailInput.value : null;
+
+      // Determine which form is submitted and show the appropriate toast message
+      if (form.closest("#contact")) {
+        showToast("Your message has been sent successfully!");
+      } else {
+        showToast("Thank you for subscribing!");
+      }
+
+      // Reset form and focus
+      form.reset();
+      if (emailInput) {
+        emailInput.focus();
+      }
+    });
+  });
+});
+
+// Add manual close toast function
+function hideToast() {
+  const toast = document.getElementById("toast");
+  toast.classList.remove("flex");
+  toast.classList.add("hidden");
+}
