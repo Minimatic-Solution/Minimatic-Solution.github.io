@@ -20,7 +20,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16/dist/smooth-scroll.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <!-- tailwind customize  -->
 
@@ -44,149 +44,191 @@
       src="https://kit.fontawesome.com/5ae38a5e71.js"
       crossorigin="anonymous"
     ></script>
-
-  
   </head>
   <body>
-
     <!-- preloader  -->
 
     <div class="preloader">
       <div class="loader">
         <svg class="spinner" viewBox="0 0 100 100">
           <defs>
-              <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stop-color="#078586" />
-                  <stop offset="100%" stop-color="#04b4b4" />
-              </linearGradient>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#078586" />
+              <stop offset="100%" stop-color="#04b4b4" />
+            </linearGradient>
           </defs>
-          <circle class="path" cx="50" cy="50" r="45" fill="none" stroke-width="5"></circle>
+          <circle
+            class="path"
+            cx="50"
+            cy="50"
+            r="45"
+            fill="none"
+            stroke-width="5"
+          ></circle>
         </svg>
-          <img src="./images/minimatic-icon.png" class="loader-logo" alt="logo">
-          <div class="loading-text">Loading<span class="loading-dots"></span></div>
+        <img src="./images/minimatic-icon.png" class="loader-logo" alt="logo" />
+        <div class="loading-text">
+          Loading<span class="loading-dots"></span>
+        </div>
       </div>
     </div>
-    <header class=" mx-auto">
+    <header class="mx-auto">
       <!-- start navbar section  -->
 
-      <nav class="navbar py-4 fixed top-0 z-50 bg-black md:opacity-70 shadow-lg w-full transition-opacity duration-500">
+      <nav
+        class="navbar py-4 fixed top-0 z-50 bg-black md:opacity-70 shadow-lg w-full transition-opacity duration-500"
+      >
         <div class="container mx-auto flex justify-between items-center">
-            <!-- Navbar Start -->
-            <div class="navbar-start flex items-center">
-                <div class="dropdown">
-                    <div class="drawer">
-                        <input id="my-drawer" type="checkbox" class="drawer-toggle" />
-                        <div class="drawer-content">
-                            <label for="my-drawer" tabindex="0" class="btn btn-ghost md:hidden">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M4 6h16M4 12h8m-8 6h16" />
-                                </svg>
-                            </label>
-                        </div>
-                        <div class="drawer-side z-10">
-                            <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
-                            <div class="p-4 w-80 min-h-full bg-white py-14">
-                                <a class="text-2xl capitalize font-bold block"><span class="text-3xl text-btnColor">M</span>inimatic <span
-                                        class="text-3xl text-btnColor">S</span>olution</a>
-                                <ul class="menu">
-                                    <!-- Home navigation item with text-btnColor class by default -->
-                                    <li class="text-btnColor hover:text-btnoolor border-b-2">
-                                        <a href="#home">Home</a>
-                                    </li>
-                                    <!-- Other navigation items -->
-                                    <li class="hover:text-btnColor border-b-2">
-                                        <a href="#about">About</a>
-                                    </li>
-                                    <li class="hover:text-btnColor border-b-2">
-                                        <a href="#service">Service</a>
-                                    </li>
-                                    <li class="hover:text-btnColor border-b-2">
-                                        <a href="#contact">Contact</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+          <!-- Navbar Start -->
+          <div class="navbar-start flex items-center">
+            <div class="dropdown">
+              <div class="drawer">
+                <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+                <div class="drawer-content">
+                  <label
+                    for="my-drawer"
+                    tabindex="0"
+                    class="btn btn-ghost md:hidden"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5 text-white"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h8m-8 6h16"
+                      />
+                    </svg>
+                  </label>
                 </div>
-                <a href="#home" class="text-xl lg:text-2xl capitalize font-semibold lg:font-bold hidden md:block text-white">
-                    <span class="text-3xl text-btnColor">M</span>inimatic <span class="text-3xl text-btnColor">S</span>olution
-                </a>
+                <div class="drawer-side z-10">
+                  <label
+                    for="my-drawer"
+                    aria-label="close sidebar"
+                    class="drawer-overlay"
+                  ></label>
+                  <div class="p-4 w-80 min-h-full bg-white py-14">
+                    <a class="text-2xl capitalize font-bold block"
+                      ><span class="text-3xl text-btnColor">M</span>inimatic
+                      <span class="text-3xl text-btnColor">S</span>olution</a
+                    >
+                    <ul class="menu">
+                      <!-- Home navigation item with text-btnColor class by default -->
+                      <li class="text-btnColor hover:text-btnoolor border-b-2">
+                        <a href="#home">Home</a>
+                      </li>
+                      <!-- Other navigation items -->
+                      <li class="hover:text-btnColor border-b-2">
+                        <a href="#about">About</a>
+                      </li>
+                      <li class="hover:text-btnColor border-b-2">
+                        <a href="#service">Service</a>
+                      </li>
+                      <li class="hover:text-btnColor border-b-2">
+                        <a href="#contact">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
-            <!-- Navbar Center -->
-            <div class="navbar-center hidden md:flex">
-                <ul class="flex gap-2 lg:gap-4 font-semibold text-white">
-                    <li class="nav-item  hover:text-btnoolor border-transparent border-b-2 hover:border-btnColor transition duration-500">
-                        <a href="#home" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item hover:text-btnColor hover:text-btnoolor border-transparent border-b-2 hover:border-btnColor transition duration-500">
-                        <a href="#about" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item hover:text-btnColor hover:text-btnoolor border-transparent border-b-2 hover:border-btnColor transition duration-500">
-                        <a href="#service" class="nav-link">Service</a>
-                    </li>
-                    <li class="nav-item hover:text-btnColor hover:text-btnoolor border-transparent border-b-2 hover:border-btnColor transition duration-500">
-                        <a href="#contact" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Navbar End -->
-            <div class="navbar-end text-right">
-                <button id="getInTouch" class="btn bg-btnColor text-white rounded-none border-none rounded-tr-xl rounded-bl-xl hover:btn-outline hover:border-btnColor hover:bg-white hover:text-btnColor hover:rounded-none hover:rounded-tl-xl hover:rounded-br-xl transition duration-500 scrollToContactBtn">
-                    Get In Touch
-                </button>
-            </div>
+            <a
+              href="#home"
+              class="text-xl lg:text-2xl capitalize font-semibold lg:font-bold hidden md:block text-white"
+            >
+              <span class="text-3xl text-btnColor">M</span>inimatic
+              <span class="text-3xl text-btnColor">S</span>olution
+            </a>
+          </div>
+          <!-- Navbar Center -->
+          <div class="navbar-center hidden md:flex">
+            <ul class="flex gap-2 lg:gap-4 font-semibold text-white">
+              <li
+                class="nav-item hover:text-btnoolor border-transparent border-b-2 hover:border-btnColor transition duration-500"
+              >
+                <a href="#home" class="nav-link">Home</a>
+              </li>
+              <li
+                class="nav-item hover:text-btnColor hover:text-btnoolor border-transparent border-b-2 hover:border-btnColor transition duration-500"
+              >
+                <a href="#about" class="nav-link">About</a>
+              </li>
+              <li
+                class="nav-item hover:text-btnColor hover:text-btnoolor border-transparent border-b-2 hover:border-btnColor transition duration-500"
+              >
+                <a href="#service" class="nav-link">Service</a>
+              </li>
+              <li
+                class="nav-item hover:text-btnColor hover:text-btnoolor border-transparent border-b-2 hover:border-btnColor transition duration-500"
+              >
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Navbar End -->
+          <div class="navbar-end text-right">
+            <button
+              id="getInTouch"
+              class="btn bg-btnColor text-white rounded-none border-none rounded-tr-xl rounded-bl-xl hover:btn-outline hover:border-btnColor hover:bg-white hover:text-btnColor hover:rounded-none hover:rounded-tl-xl hover:rounded-br-xl transition duration-500 scrollToContactBtn"
+            >
+              Get In Touch
+            </button>
+          </div>
         </div>
-    </nav>
-    
-    
-    
+      </nav>
     </header>
 
     <main>
       <!-- start banner section  -->
       <section id="home">
-        <div class="relative  h-[100vh]">
-          <img class="w-full h-full"  src="./images/banner-1.jpg" alt="">
+        <div class="relative h-[100vh]">
+          <img class="w-full h-full" src="./images/banner-1.jpg" alt="" />
           <!-- <div class="hero-overlay"></div> -->
-          <div class="container text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 overflow-hidden">
-            
-              <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" class="space-y-6 max-w-3xl mx-auto">
+          <div
+            class="container text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 overflow-hidden"
+          >
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              class="space-y-6 max-w-3xl mx-auto"
+            >
+              <p
+                class="border-2 border-btnColor w-60 mx-auto py-4 rounded-tl-xl rounded-br-xl text-white cursor-default"
+              >
+                Our Vision
+              </p>
 
-                <p
-                  class=" border-2 border-btnColor w-60 mx-auto py-4 rounded-tl-xl rounded-br-xl text-white cursor-default"
-                >
-                  Our Vision
-                </p>
-                
-  
-             
-                  <h2
-                  class="font-extrabold text-2xl md:text-5xl lg:text-7xl text-white leading-tight "
-                >
-                  Powerful Digital Solutions
-                </h2>
-                  <p class="font-normal text-base text-[#aaafb8] w-[90%] mx-auto text-center ">
-                    In the realm of business, there are unavoidable duties where pleasures must be sacrificed and challenges embraced.
-                  </p>
-                
-                <button
-                  class="btn bg-btnColor text-white border-btnColor rounded-none rounded-tr-xl rounded-bl-xl hover:btn-outline hover:border-btnColor hover:bg-white hover:text-btnColor hover:rounded-none hover:rounded-tl-xl hover:rounded-br-xl transition duration-500 scrollToMissionVisionBtn"
-                >
-                  Read More
-                </button>
-              </div>
-         
+              <h2
+                class="font-extrabold text-2xl md:text-5xl lg:text-7xl text-white leading-tight"
+              >
+                Powerful Digital Solutions
+              </h2>
+              <p
+                class="font-normal text-base text-[#aaafb8] w-[90%] mx-auto text-center"
+              >
+                In the realm of business, there are unavoidable duties where
+                pleasures must be sacrificed and challenges embraced.
+              </p>
+
+              <button
+                class="btn bg-btnColor text-white border-btnColor rounded-none rounded-tr-xl rounded-bl-xl hover:btn-outline hover:border-btnColor hover:bg-white hover:text-btnColor hover:rounded-none hover:rounded-tl-xl hover:rounded-br-xl transition duration-500 scrollToMissionVisionBtn"
+              >
+                Read More
+              </button>
+            </div>
           </div>
-         
-         </div>
+        </div>
       </section>
 
       <!-- start about company section  -->
-      <section id="about" class="bg-base-200" >
+      <section id="about" class="bg-base-200">
         <div class="container mx-auto px-10 xl:px-0 pb-28 pt-16">
-
           <div class="grid gap-24 lg:gap-0 lg:grid-cols-2">
             <!-- about left content  -->
             <div class="space-y-4">
@@ -204,7 +246,12 @@
               <!-- left content bottom  -->
               <div class="grid md:grid-cols-2 gap-6 pt-6 overflow-hidden">
                 <!-- Experience  -->
-                <div data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-out" class="space-y-4">
+                <div
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  class="space-y-4"
+                >
                   <i class="fas fa-medal text-4xl text-btnColor"></i>
                   <h5
                     class="text-[#282f3b] text-2xl font-semibold border-b-4 pb-4"
@@ -216,7 +263,12 @@
                   </p>
                 </div>
                 <!-- support  -->
-                <div data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-out" class="space-y-4">
+                <div
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  class="space-y-4"
+                >
                   <i class="fas fa-headset text-4xl text-btnColor"></i>
                   <h5
                     class="text-[#282f3b] text-2xl font-semibold border-b-4 pb-4"
@@ -229,13 +281,20 @@
                 </div>
               </div>
             </div>
-  
+
             <!-- about right img  -->
             <div class="relative flex flex-col overflow-hidden">
-              <img class="order-2 py-6 md:py-0" src="./images/about.png" alt="" />
-  
+              <img
+                class="order-2 py-6 md:py-0"
+                src="./images/about.png"
+                alt=""
+              />
+
               <!-- innovation hr solution  -->
-              <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out"
+              <div
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
                 class="bg-white p-6 lg:p-4 xl:p-6 shadow-2xl space-y-4 md:absolute md:w-[40%] top-0 left-12 rounded order-1"
               >
                 <img class="mx-auto" src="./images/about-2.png" alt="" />
@@ -245,7 +304,8 @@
                   Innovation HR Solution
                 </h2>
                 <p class="text-gray-600">
-                  Unlocking benefits from innovation requires recognizing everyone's rights.
+                  Unlocking benefits from innovation requires recognizing
+                  everyone's rights.
                 </p>
                 <button
                   class="hover:space-x-4 hover:text-btnColor transition-all duration-300 scrollToMissionVisionBtn"
@@ -254,9 +314,12 @@
                   <i class="fas fa-chevron-right text-sm ml-2"> </i>
                 </button>
               </div>
-  
+
               <!-- Leadership development  -->
-              <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out"
+              <div
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
                 class="bg-white xl:p-6 lg:p-4 p-6 shadow-2xl space-y-4 md:w-[40%] md:absolute top-44 right-8 rounded order-3"
               >
                 <img class="mx-auto" src="./images/about-3.png" alt="" />
@@ -266,7 +329,8 @@
                   Leadership Development
                 </h2>
                 <p class="text-gray-600">
-                  True mastery of human happiness lies in embracing the teachings of great explorers of truth.
+                  True mastery of human happiness lies in embracing the
+                  teachings of great explorers of truth.
                 </p>
                 <button
                   class="hover:space-x-4 hover:text-btnColor transition-all duration-300 scrollToMissionVisionBtn"
@@ -299,19 +363,34 @@
                 cost and a lot of efforts.
               </p>
               <div class="flex flex-wrap gap-4 justify-between overflow-hidden">
-                <div data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-out" class="md:border-2 rounded p-6">
+                <div
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  class="md:border-2 rounded p-6"
+                >
                   <strong class="font-extrabold text-4xl text-btnColor"
                     >330 +</strong
                   >
                   <p class="text-white font-bold">Active Clients</p>
                 </div>
-                <div data-aos="fade-left" data-aos-duration="1400" data-aos-easing="ease-in-out" class="md:border-2 p-6">
+                <div
+                  data-aos="fade-left"
+                  data-aos-duration="1400"
+                  data-aos-easing="ease-in-out"
+                  class="md:border-2 p-6"
+                >
                   <strong class="font-extrabold text-4xl text-btnColor"
                     >850 +</strong
                   >
                   <p class="text-white font-bold">Projects Done</p>
                 </div>
-                <div data-aos="fade-left" data-aos-duration="1800" data-aos-easing="ease-in-out" class="md:border-2 p-6">
+                <div
+                  data-aos="fade-left"
+                  data-aos-duration="1800"
+                  data-aos-easing="ease-in-out"
+                  class="md:border-2 p-6"
+                >
                   <strong class="font-extrabold text-4xl text-btnColor"
                     >25 +</strong
                   >
@@ -321,7 +400,12 @@
             </div>
             <div class="grid md:grid-cols-2 gap-4">
               <div class="space-y-4 relative overflow-hidden">
-                <div data-aos="zoom-in" data-aos-duration="1600" data-aos-easing="ease-in-out" class="relative">
+                <div
+                  data-aos="zoom-in"
+                  data-aos-duration="1600"
+                  data-aos-easing="ease-in-out"
+                  class="relative"
+                >
                   <img
                     class="rounded"
                     src="./images/technology-index-1.png"
@@ -336,7 +420,12 @@
                     Our Mission
                   </p>
                 </div>
-                <div data-aos="zoom-in" data-aos-duration="1800" data-aos-easing="ease-in-out" class="relative">
+                <div
+                  data-aos="zoom-in"
+                  data-aos-duration="1800"
+                  data-aos-easing="ease-in-out"
+                  class="relative"
+                >
                   <img
                     class="rounded"
                     src="./images/technology-index-2.png"
@@ -354,7 +443,12 @@
               </div>
 
               <div class="space-y-4 relative pt-10">
-                <div data-aos="zoom-in" data-aos-duration="2000" data-aos-easing="ease-in-out" class="relative">
+                <div
+                  data-aos="zoom-in"
+                  data-aos-duration="2000"
+                  data-aos-easing="ease-in-out"
+                  class="relative"
+                >
                   <img
                     class="rounded"
                     src="./images/technology-index-3.png"
@@ -369,7 +463,12 @@
                     Our Vision
                   </p>
                 </div>
-                <div data-aos="zoom-in" data-aos-duration="2200" data-aos-easing="ease-in-out" class="relative">
+                <div
+                  data-aos="zoom-in"
+                  data-aos-duration="2200"
+                  data-aos-easing="ease-in-out"
+                  class="relative"
+                >
                   <img
                     class="rounded"
                     src="./images/technology-index-4.jpg"
@@ -399,20 +498,24 @@
               <h2
                 class="text-[#282f3b] text-3xl md:text-4xl font-extrabold leading-10"
               >
-              Discover the Depth of
-              <p class="pt-3">Our IT Services Portfolio</p>
+                Discover the Depth of
+                <p class="pt-3">Our IT Services Portfolio</p>
               </h2>
             </div>
-            <button        
+            <button
               class="btn bg-btnColor text-white rounded-none rounded-tr-xl rounded-bl-xl hover:btn-outline hover:border-btnColor hover:bg-white hover:text-btnColor hover:rounded-none hover:rounded-tl-xl hover:rounded-br-xl transition duration-500 scrollToHomeBtn"
             >
               All Service
             </button>
           </div>
-          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 overflow-hidden">
+          <div
+            class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 overflow-hidden"
+          >
             <!-- card one  -->
             <div
-            data-aos="zoom-in" data-aos-duration="1200" data-aos-easing="ease-in-out"
+              data-aos="zoom-in"
+              data-aos-duration="1200"
+              data-aos-easing="ease-in-out"
               class="flex flex-col xl:flex-row gap-6 border p-6 rounded-xl hover:shadow-lg transition hover:bg-white duration-700"
             >
               <i class="fas fa-laptop-code text-4xl text-btnColor"></i>
@@ -429,7 +532,9 @@
             </div>
             <!-- card Two  -->
             <div
-            data-aos="zoom-in" data-aos-duration="1400" data-aos-easing="ease-in-out"
+              data-aos="zoom-in"
+              data-aos-duration="1400"
+              data-aos-easing="ease-in-out"
               class="flex flex-col xl:flex-row gap-6 border p-6 rounded-xl hover:shadow-lg transition hover:bg-white duration-700"
             >
               <i class="fas fa-mobile-alt text-4xl text-btnColor"></i>
@@ -445,7 +550,9 @@
             </div>
             <!-- card Three  -->
             <div
-            data-aos="zoom-in" data-aos-duration="1600" data-aos-easing="ease-in-out"
+              data-aos="zoom-in"
+              data-aos-duration="1600"
+              data-aos-easing="ease-in-out"
               class="flex flex-col xl:flex-row gap-6 border p-6 rounded-xl hover:shadow-lg transition hover:bg-white duration-700"
             >
               <i class="fas fa-desktop text-4xl text-btnColor"></i>
@@ -460,7 +567,9 @@
             </div>
             <!-- card Four  -->
             <div
-            data-aos="zoom-in" data-aos-duration="1800" data-aos-easing="ease-in-out"
+              data-aos="zoom-in"
+              data-aos-duration="1800"
+              data-aos-easing="ease-in-out"
               class="flex flex-col xl:flex-row gap-6 border p-6 rounded-xl hover:shadow-lg transition hover:bg-white duration-700"
             >
               <i class="fas fa-bug text-4xl text-btnColor"></i>
@@ -475,7 +584,9 @@
             </div>
             <!-- card Five  -->
             <div
-            data-aos="zoom-in" data-aos-duration="2000" data-aos-easing="ease-in-out"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+              data-aos-easing="ease-in-out"
               class="flex flex-col xl:flex-row gap-6 border p-6 rounded-xl hover:shadow-lg transition hover:bg-white duration-700"
             >
               <i class="fas fa-chart-line text-4xl text-btnColor"></i>
@@ -492,7 +603,9 @@
             </div>
             <!-- card Six  -->
             <div
-            data-aos="zoom-in" data-aos-duration="2200" data-aos-easing="ease-in-out"
+              data-aos="zoom-in"
+              data-aos-duration="2200"
+              data-aos-easing="ease-in-out"
               class="flex flex-col xl:flex-row gap-6 border p-6 rounded-xl hover:shadow-lg transition hover:bg-white duration-700"
             >
               <i class="fas fa-users text-4xl text-btnColor"></i>
@@ -511,10 +624,14 @@
         </div>
       </section>
 
-
       <!-- start consultation  -->
       <section class="py-28 consultant overflow-hidden">
-        <div data-aos="fade-up" data-aos-duration="1400" data-aos-easing="ease-in-out"  class="flex justify-center items-center">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1400"
+          data-aos-easing="ease-in-out"
+          class="flex justify-center items-center"
+        >
           <div class="text-center space-y-6">
             <p class="text-white font-semibold">
               // Drop us a line! We are here to answer your questions 24/7
@@ -530,10 +647,6 @@
           </div>
         </div>
       </section>
-
-
-
-      
 
       <!-- start Q&A  -->
       <section class="bg-[#F5F6F9] py-16">
@@ -552,7 +665,12 @@
           </div>
           <div class="grid lg:grid-cols-2 gap-4">
             <div class="grid lg:grid-cols-2 gap-4 overflow-hidden">
-              <div data-aos="zoom-in" data-aos-duration="1400" data-aos-easing="ease-in-out" class="relative">
+              <div
+                data-aos="zoom-in"
+                data-aos-duration="1400"
+                data-aos-easing="ease-in-out"
+                class="relative"
+              >
                 <img
                   class="max-w-full overflow-hidden h-96 rounded-md"
                   src="./images/Q&A-1.jpg"
@@ -569,7 +687,12 @@
                 </div>
               </div>
 
-              <div data-aos="zoom-in" data-aos-duration="1600" data-aos-easing="ease-in-out" class="relative">
+              <div
+                data-aos="zoom-in"
+                data-aos-duration="1600"
+                data-aos-easing="ease-in-out"
+                class="relative"
+              >
                 <img
                   class="max-w-full overflow-hidden h-96 rounded-md"
                   src="./images/Q&A-2.jpg"
@@ -588,8 +711,11 @@
             </div>
 
             <div class="space-y-6 overflow-hidden">
-              <div data-aos="fade-up" data-aos-duration="1200" data-aos-easing="ease-in-out"
-                class="collapse collapse-plus bg-white shadow-md hover:shadow-xl "
+              <div
+                data-aos="fade-up"
+                data-aos-duration="1200"
+                data-aos-easing="ease-in-out"
+                class="collapse collapse-plus bg-white shadow-md hover:shadow-xl"
               >
                 <input type="radio" name="my-accordion-3" checked="checked" />
                 <div class="collapse-title text-xl font-medium text-[#282f3b]">
@@ -597,13 +723,18 @@
                 </div>
                 <div class="collapse-content">
                   <p class="text-gray-600">
-                    We specialize in providing IT solutions across various industries, including healthcare, finance, e-commerce, and more. Our expertise spans diverse sectors to cater to the unique needs of each client.
+                    We specialize in providing IT solutions across various
+                    industries, including healthcare, finance, e-commerce, and
+                    more. Our expertise spans diverse sectors to cater to the
+                    unique needs of each client.
                   </p>
                 </div>
               </div>
               <div
-              data-aos="fade-up" data-aos-duration="1400" data-aos-easing="ease-in-out"
-                class="collapse collapse-plus bg-white shadow-md hover:shadow-xl "
+                data-aos="fade-up"
+                data-aos-duration="1400"
+                data-aos-easing="ease-in-out"
+                class="collapse collapse-plus bg-white shadow-md hover:shadow-xl"
               >
                 <input type="radio" name="my-accordion-3" />
                 <div class="collapse-title text-xl font-medium text-[#282f3b]">
@@ -611,26 +742,38 @@
                 </div>
                 <div class="collapse-content">
                   <p class="text-gray-600">
-                    Security is our top priority. We implement robust encryption protocols, regularly update our security measures, and adhere to industry best practices to safeguard your data against potential threats.
+                    Security is our top priority. We implement robust encryption
+                    protocols, regularly update our security measures, and
+                    adhere to industry best practices to safeguard your data
+                    against potential threats.
                   </p>
                 </div>
               </div>
               <div
-              data-aos="fade-up" data-aos-duration="1600" data-aos-easing="ease-in-out"
+                data-aos="fade-up"
+                data-aos-duration="1600"
+                data-aos-easing="ease-in-out"
                 class="collapse collapse-plus bg-white shadow-md hover:shadow-xl"
               >
                 <input type="radio" name="my-accordion-3" />
                 <div class="collapse-title text-xl font-medium text-[#282f3b]">
-                  3. Can you customize your services to fit our specific requirements?
+                  3. Can you customize your services to fit our specific
+                  requirements?
                 </div>
                 <div class="collapse-content">
                   <p class="text-gray-600">
-                    Absolutely! We understand that every business is unique. That's why we offer customizable solutions tailored to your specific needs and objectives. Our team works closely with you to deliver personalized services that align with your goals.
+                    Absolutely! We understand that every business is unique.
+                    That's why we offer customizable solutions tailored to your
+                    specific needs and objectives. Our team works closely with
+                    you to deliver personalized services that align with your
+                    goals.
                   </p>
                 </div>
               </div>
               <div
-              data-aos="fade-up" data-aos-duration="1800" data-aos-easing="ease-in-out"
+                data-aos="fade-up"
+                data-aos-duration="1800"
+                data-aos-easing="ease-in-out"
                 class="collapse collapse-plus bg-white shadow-md hover:shadow-xl"
               >
                 <input type="radio" name="my-accordion-3" />
@@ -639,12 +782,18 @@
                 </div>
                 <div class="collapse-content">
                   <p class="text-gray-600">
-                    Our team comprises highly skilled professionals with extensive experience in the IT industry. We're passionate about innovation and dedicated to delivering exceptional results. With our collaborative approach and commitment to excellence, we strive to exceed your expectations.
+                    Our team comprises highly skilled professionals with
+                    extensive experience in the IT industry. We're passionate
+                    about innovation and dedicated to delivering exceptional
+                    results. With our collaborative approach and commitment to
+                    excellence, we strive to exceed your expectations.
                   </p>
                 </div>
               </div>
               <div
-              data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                data-aos-easing="ease-in-out"
                 class="collapse collapse-plus bg-white shadow-md hover:shadow-xl"
               >
                 <input type="radio" name="my-accordion-3" />
@@ -653,7 +802,11 @@
                 </div>
                 <div class="collapse-content">
                   <p class="text-gray-600">
-                    Getting started with us is simple. Reach out to our team, and we'll schedule a consultation to discuss your requirements in detail. From there, we'll develop a customized plan tailored to your needs and initiate the process to bring your vision to life.
+                    Getting started with us is simple. Reach out to our team,
+                    and we'll schedule a consultation to discuss your
+                    requirements in detail. From there, we'll develop a
+                    customized plan tailored to your needs and initiate the
+                    process to bring your vision to life.
                   </p>
                 </div>
               </div>
@@ -662,38 +815,51 @@
         </div>
       </section>
 
-       <!-- start mission and vision  -->
-       <section id="missionVision">
+      <!-- Start Mission and Vision -->
+      <section id="missionVision">
         <div class="flex flex-wrap text-white">
-          <div class="w-1/2 bg-[#1c1c1c] py-20"> 
-            <div class="px-48 space-y-4">
-              <h2 class="text-4xl">Mission</h2>
-              <p class="">
-                We're on a mission to equip every enterprise with digital management solutions, empowering them to maximize efficiency through advanced technology. </p>
-  
-              <p> Our goal is to dispel misconceptions about digital management systems, ensuring seamless adoption and integration for our clients.</p>
-  
-              <p> Specializing in tailored software solutions, mobile apps, websites, and theme design, we provide customized services to drive success for businesses of all sizes.
+          <!-- Mission Section -->
+          <div class="w-full md:w-1/2 bg-[#1c1c1c] py-12 md:py-20">
+            <div class="px-6 sm:px-12 md:px-24 lg:px-32 xl:px-48 space-y-4">
+              <h2 class="text-3xl md:text-4xl font-bold">Mission</h2>
+              <p>
+                We're on a mission to equip every enterprise with digital
+                management solutions, empowering them to maximize efficiency
+                through advanced technology.
+              </p>
+              <p>
+                Our goal is to dispel misconceptions about digital management
+                systems, ensuring seamless adoption and integration for our
+                clients.
+              </p>
+              <p>
+                Specializing in tailored software solutions, mobile apps,
+                websites, and theme design, we provide customized services to
+                drive success for businesses of all sizes.
               </p>
             </div>
           </div>
-            
-          <div class="w-1/2 bg-[#282f3b] py-10">
-  
-            <div class="px-48 space-y-4" >
-              <h2 class="text-4xl">Vision</h2>
-              <p>Our vision is to ensure every enterprise has access to digital management solutions, fostering widespread adoption of advanced technologies. </p>
-  
-              <p> We aim to debunk misconceptions surrounding digital management systems, leveraging cutting-edge technology and automation to accelerate business growth. </p> 
-  
-              <p> We're dedicated to crafting customized software solutions, mobile apps, websites, and themes, catering to the diverse needs of our clients.
+
+          <!-- Vision Section -->
+          <div class="w-full md:w-1/2 bg-[#282f3b] py-12 md:py-20">
+            <div class="px-6 sm:px-12 md:px-24 lg:px-32 xl:px-48 space-y-4">
+              <h2 class="text-3xl md:text-4xl font-bold">Vision</h2>
+              <p>
+                Our vision is to ensure every enterprise has access to digital
+                management solutions, fostering widespread adoption of advanced
+                technologies.
+              </p>
+              <p>
+                We aim to debunk misconceptions surrounding digital management
+                systems, leveraging cutting-edge technology and automation to
+                accelerate business growth.
+              </p>
+              <p>
+                We're dedicated to crafting customized software solutions,
+                mobile apps, websites, and themes, catering to the diverse needs
+                of our clients.
               </p>
             </div>
-          </div>
-          
-  
-           
-            
           </div>
         </div>
       </section>
@@ -703,87 +869,166 @@
         <div class="container mx-auto px-10 xl:px-0">
           <div class="text-center mb-12">
             <p class="text-btnColor font-semibold">// OUR WORK</p>
-            <h2 class="text-4xl font-bold text-gray-800 mb-4">Recent Projects</h2>
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">
+              Recent Projects
+            </h2>
             <p class="text-gray-600 max-w-2xl mx-auto">
-              Discover how we've helped businesses transform their digital presence and achieve remarkable results.
+              Discover how we've helped businesses transform their digital
+              presence and achieve remarkable results.
             </p>
           </div>
           <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Project 1 -->
             <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-              <img src="./images/project-1.jpg" alt="E-commerce Platform" class="w-full h-48 object-cover">
+              <img
+                src="./images/project-1.jpg"
+                alt="E-commerce Platform"
+                class="w-full h-48 object-cover"
+              />
               <div class="p-6">
-                <div class="text-sm text-btnColor font-semibold mb-2">Web Development</div>
-                <h3 class="text-xl font-bold text-gray-800 mb-2">E-commerce Platform Overhaul</h3>
-                <p class="text-gray-600 mb-4">Redesigned and optimized a major e-commerce site, increasing conversion rates by 35%.</p>
-                <a href="#home" class="inline-flex items-center text-btnColor hover:text-btnColor transition-colors duration-200">
-                  Learn More 
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                <div class="text-sm text-btnColor font-semibold mb-2">
+                  Web Development
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">
+                  E-commerce Platform Overhaul
+                </h3>
+                <p class="text-gray-600 mb-4">
+                  Redesigned and optimized a major e-commerce site, increasing
+                  conversion rates by 35%.
+                </p>
+                <a
+                  href="#home"
+                  class="inline-flex items-center text-btnColor hover:text-btnColor transition-colors duration-200"
+                >
+                  Learn More
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 ml-2"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    />
                   </svg>
                 </a>
               </div>
             </div>
-            
+
             <!-- Project 2 -->
             <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-              <img src="./images/project-2.jpg" alt="FinTech Mobile App" class="w-full h-48 object-cover">
+              <img
+                src="./images/project-2.jpg"
+                alt="FinTech Mobile App"
+                class="w-full h-48 object-cover"
+              />
               <div class="p-6">
-                <div class="text-sm text-btnColor font-semibold mb-2">Mobile Development</div>
-                <h3 class="text-xl font-bold text-gray-800 mb-2">FinTech Mobile App</h3>
-                <p class="text-gray-600 mb-4">Developed a secure and user-friendly mobile banking application for a leading financial institution.</p>
-                <a href="#home" class="inline-flex items-center text-btnColor hover:text-btnColor transition-colors duration-200">
-                  Learn More 
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                <div class="text-sm text-btnColor font-semibold mb-2">
+                  Mobile Development
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">
+                  FinTech Mobile App
+                </h3>
+                <p class="text-gray-600 mb-4">
+                  Developed a secure and user-friendly mobile banking
+                  application for a leading financial institution.
+                </p>
+                <a
+                  href="#home"
+                  class="inline-flex items-center text-btnColor hover:text-btnColor transition-colors duration-200"
+                >
+                  Learn More
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 ml-2"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    />
                   </svg>
                 </a>
               </div>
             </div>
-            
+
             <!-- Project 3 -->
             <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-              <img src="./images/project-3.jpg" alt="AI-Powered Customer Service Bot" class="w-full h-48 object-cover">
+              <img
+                src="./images/project-3.jpg"
+                alt="AI-Powered Customer Service Bot"
+                class="w-full h-48 object-cover"
+              />
               <div class="p-6">
-                <div class="text-sm text-btnColor font-semibold mb-2">AI & Machine Learning</div>
-                <h3 class="text-xl font-bold text-gray-800 mb-2">AI-Powered Customer Service Bot</h3>
-                <p class="text-gray-600 mb-4">Implemented an AI chatbot that reduced customer service response times by 60%.</p>
-                <a href="#home" class="inline-flex items-center text-btnColor hover:text-btnColor transition-colors duration-200">
-                  Learn More 
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                <div class="text-sm text-btnColor font-semibold mb-2">
+                  AI & Machine Learning
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">
+                  AI-Powered Customer Service Bot
+                </h3>
+                <p class="text-gray-600 mb-4">
+                  Implemented an AI chatbot that reduced customer service
+                  response times by 60%.
+                </p>
+                <a
+                  href="#home"
+                  class="inline-flex items-center text-btnColor hover:text-btnColor transition-colors duration-200"
+                >
+                  Learn More
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 ml-2"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    />
                   </svg>
                 </a>
               </div>
             </div>
           </div>
           <div class="text-center mt-12">
-            <button class="btn bg-btnColor text-white rounded-none rounded-tr-xl rounded-bl-xl hover:btn-outline hover:border-btnColor hover:bg-white hover:text-btnColor hover:rounded-none hover:rounded-tl-xl hover:rounded-br-xl transition duration-500 scrollToHomeBtn">
+            <button
+              class="btn bg-btnColor text-white rounded-none rounded-tr-xl rounded-bl-xl hover:btn-outline hover:border-btnColor hover:bg-white hover:text-btnColor hover:rounded-none hover:rounded-tl-xl hover:rounded-br-xl transition duration-500 scrollToHomeBtn"
+            >
               View All Projects
             </button>
           </div>
         </div>
       </section>
       <!-- End Recent Projects Section -->
-      
+
       <!-- Start Subscription Section -->
-      <section class="py-16 bg-gradient-to-r from-btnColor to-teal-600 relative overflow-hidden">
+      <section
+        class="py-16 bg-gradient-to-r from-btnColor to-teal-600 relative overflow-hidden"
+      >
         <div class="container mx-auto px-10 xl:px-0 relative z-10">
           <div class="max-w-4xl mx-auto text-center mb-12">
-            <h2 class="text-4xl font-bold text-white mb-4">Stay Ahead in Tech</h2>
+            <h2 class="text-4xl font-bold text-white mb-4">
+              Stay Ahead in Tech
+            </h2>
             <p class="text-white text-opacity-90 text-lg">
-              Subscribe to our newsletter for the latest industry insights, tech trends, and exclusive offers.
+              Subscribe to our newsletter for the latest industry insights, tech
+              trends, and exclusive offers.
             </p>
           </div>
           <form class="max-w-2xl mx-auto flex flex-col sm:flex-row gap-4">
-            <input 
-              type="email" 
-              placeholder="Enter your email address" 
+            <input
+              type="email"
+              placeholder="Enter your email address"
               class="flex-grow px-6 py-4 rounded-full text-gray-800 bg-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 transition duration-300"
               required
-            >
-            <button 
-              type="submit" 
+            />
+            <button
+              type="submit"
               class="px-8 py-4 bg-white text-btnColor font-semibold rounded-full hover:bg-opacity-90 transition duration-300 transform hover:scale-105"
             >
               Subscribe
@@ -793,114 +1038,390 @@
             Join over 10,000 tech enthusiasts who've already subscribed!
           </p>
         </div>
-        
+
         <!-- Decorative Elements -->
         <div class="absolute top-0 left-0 w-full h-full overflow-hidden">
-          <svg class="absolute left-0 top-0 h-full w-64 text-white text-opacity-20 transform -translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <svg
+            class="absolute left-0 top-0 h-full w-64 text-white text-opacity-20 transform -translate-x-1/2"
+            fill="currentColor"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="none"
+          >
             <polygon points="50,0 100,0 50,100 0,100" />
           </svg>
-          <svg class="absolute right-0 top-0 h-full w-64 text-white text-opacity-20 transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <svg
+            class="absolute right-0 top-0 h-full w-64 text-white text-opacity-20 transform translate-x-1/2"
+            fill="currentColor"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="none"
+          >
             <polygon points="50,0 100,0 50,100 0,100" />
           </svg>
         </div>
-        
+
         <!-- Animated Circles -->
         <div class="absolute top-0 left-0 w-full h-full">
-          <div class="absolute w-40 h-40 bg-white rounded-full opacity-10 -top-20 -left-20 animate-pulse"></div>
-          <div class="absolute w-56 h-56 bg-white rounded-full opacity-10 top-1/2 left-1/4 animate-pulse" style="animation-delay: 1s;"></div>
-          <div class="absolute w-32 h-32 bg-white rounded-full opacity-10 bottom-20 right-10 animate-pulse" style="animation-delay: 2s;"></div>
+          <div
+            class="absolute w-40 h-40 bg-white rounded-full opacity-10 -top-20 -left-20 animate-pulse"
+          ></div>
+          <div
+            class="absolute w-56 h-56 bg-white rounded-full opacity-10 top-1/2 left-1/4 animate-pulse"
+            style="animation-delay: 1s"
+          ></div>
+          <div
+            class="absolute w-32 h-32 bg-white rounded-full opacity-10 bottom-20 right-10 animate-pulse"
+            style="animation-delay: 2s"
+          ></div>
         </div>
       </section>
       <!-- End Subscription Section -->
-      
-        <!-- Start Package Section -->
-        <section class="py-20 bg-gray-100">
-          <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-              <p class="text-btnColor font-semibold uppercase tracking-wider mb-2">Pricing Plans</p>
-              <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Choose Your Perfect Package</h2>
-              <p class="text-gray-600 max-w-2xl mx-auto text-lg">
-                Elevate your business with our tailored IT solutions. Select the package that best fits your needs and goals.
-              </p>
+
+      <!-- Start Package Section -->
+      <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-16">
+            <p
+              class="text-btnColor font-semibold uppercase tracking-wider mb-2"
+            >
+              Pricing Plans
+            </p>
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+              Choose Your Perfect Package
+            </h2>
+            <p class="text-gray-600 max-w-2xl mx-auto text-lg">
+              Elevate your business with our tailored IT solutions. Select the
+              package that best fits your needs and goals.
+            </p>
+          </div>
+
+          <div class="flex flex-wrap justify-center gap-8">
+            <!-- Basic Package -->
+            <div
+              class="w-full md:w-96 bg-white rounded-2xl shadow-xl overflow-hidden transform transition duration-500 hover:scale-105"
+            >
+              <div class="p-8">
+                <div class="flex items-center justify-between mb-8">
+                  <h3 class="text-2xl font-bold text-gray-800">Basic</h3>
+                  <span
+                    class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold"
+                    >Starter</span
+                  >
+                </div>
+                <p class="text-5xl font-bold text-btnColor mb-6">
+                  $99<span class="text-xl text-gray-500">/mo</span>
+                </p>
+                <ul class="text-gray-600 mb-8 space-y-4">
+                  <li class="flex items-center">
+                    <svg
+                      class="w-5 h-5 mr-2 text-green-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                    Basic Web Development
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                      class="w-5 h-5 mr-2 text-green-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                    5 Pages
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                      class="w-5 h-5 mr-2 text-green-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                    Basic SEO
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                      class="w-5 h-5 mr-2 text-green-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                    1 Month Support
+                  </li>
+                </ul>
+              </div>
+              <div class="p-8 bg-gray-50">
+                <button
+                  class="w-full py-3 px-6 bg-btnColor text-white font-semibold rounded-lg shadow-md hover:bg-btnColor-dark focus:outline-none focus:ring-2 focus:ring-btnColor focus:ring-opacity-75 transition duration-300 scrollToHomeBtn"
+                >
+                  Get Started
+                </button>
+              </div>
             </div>
-            
-            <div class="flex flex-wrap justify-center gap-8">
-              <!-- Basic Package -->
-              <div class="w-full md:w-96 bg-white rounded-2xl shadow-xl overflow-hidden transform transition duration-500 hover:scale-105">
-                <div class="p-8">
-                  <div class="flex items-center justify-between mb-8">
-                    <h3 class="text-2xl font-bold text-gray-800">Basic</h3>
-                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold">Starter</span>
-                  </div>
-                  <p class="text-5xl font-bold text-btnColor mb-6">$99<span class="text-xl text-gray-500">/mo</span></p>
-                  <ul class="text-gray-600 mb-8 space-y-4">
-                    <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Basic Web Development</li>
-                    <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> 5 Pages</li>
-                    <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Basic SEO</li>
-                    <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> 1 Month Support</li>
-                  </ul>
-                </div>
-                <div class="p-8 bg-gray-50">
-                  <button class="w-full py-3 px-6 bg-btnColor text-white font-semibold rounded-lg shadow-md hover:bg-btnColor-dark focus:outline-none focus:ring-2 focus:ring-btnColor focus:ring-opacity-75 transition duration-300 scrollToHomeBtn">
-                    Get Started
-                  </button>
-                </div>
+
+            <!-- Pro Package -->
+            <div
+              class="w-full md:w-96 bg-white rounded-2xl shadow-xl overflow-hidden transform transition duration-500 hover:scale-105 border-2 border-btnColor relative"
+            >
+              <div
+                class="absolute top-0 right-0 bg-btnColor text-white px-3 py-1 rounded-bl-lg font-semibold text-sm"
+              >
+                POPULAR
               </div>
-        
-              <!-- Pro Package -->
-              <div class="w-full md:w-96 bg-white rounded-2xl shadow-xl overflow-hidden transform transition duration-500 hover:scale-105 border-2 border-btnColor relative">
-                <div class="absolute top-0 right-0 bg-btnColor text-white px-3 py-1 rounded-bl-lg font-semibold text-sm">POPULAR</div>
-                <div class="p-8">
-                  <div class="flex items-center justify-between mb-8">
-                    <h3 class="text-2xl font-bold text-gray-800">Pro</h3>
-                    <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-semibold">Advanced</span>
-                  </div>
-                  <p class="text-5xl font-bold text-btnColor mb-6">$199<span class="text-xl text-gray-500">/mo</span></p>
-                  <ul class="text-gray-600 mb-8 space-y-4">
-                    <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Advanced Web Development</li>
-                    <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> 10 Pages</li>
-                    <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Advanced SEO</li>
-                    <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> 3 Months Support</li>
-                    <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Mobile Responsive</li>
-                  </ul>
+              <div class="p-8">
+                <div class="flex items-center justify-between mb-8">
+                  <h3 class="text-2xl font-bold text-gray-800">Pro</h3>
+                  <span
+                    class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-semibold"
+                    >Advanced</span
+                  >
                 </div>
-                <div class="p-8 bg-gray-50">
-                  <button class="w-full py-3 px-6 bg-btnColor text-white font-semibold rounded-lg shadow-md hover:bg-btnColor-dark focus:outline-none focus:ring-2 focus:ring-btnColor focus:ring-opacity-75 transition duration-300 scrollToHomeBtn">
-                    Get Started
-                  </button>
-                </div>
+                <p class="text-5xl font-bold text-btnColor mb-6">
+                  $199<span class="text-xl text-gray-500">/mo</span>
+                </p>
+                <ul class="text-gray-600 mb-8 space-y-4">
+                  <li class="flex items-center">
+                    <svg
+                      class="w-5 h-5 mr-2 text-green-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                    Advanced Web Development
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                      class="w-5 h-5 mr-2 text-green-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                    10 Pages
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                      class="w-5 h-5 mr-2 text-green-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                    Advanced SEO
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                      class="w-5 h-5 mr-2 text-green-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                    3 Months Support
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                      class="w-5 h-5 mr-2 text-green-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                    Mobile Responsive
+                  </li>
+                </ul>
               </div>
-        
-              <!-- Enterprise Package -->
-              <div class="w-full md:w-96 bg-white rounded-2xl shadow-xl overflow-hidden transform transition duration-500 hover:scale-105">
-                <div class="p-8">
-                  <div class="flex items-center justify-between mb-8">
-                    <h3 class="text-2xl font-bold text-gray-800">Enterprise</h3>
-                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm font-semibold">Custom</span>
-                  </div>
-                  <p class="text-5xl font-bold text-btnColor mb-6">$499<span class="text-xl text-gray-500">/mo</span></p>
-                  <ul class="text-gray-600 mb-8 space-y-4">
-                    <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Custom Web Development</li>
-                    <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Unlimited Pages</li>
-                    <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Premium SEO Package</li>
-                    <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> 12 Months Support</li>
-                    <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Advanced Analytics</li>
-                  </ul>
+              <div class="p-8 bg-gray-50">
+                <button
+                  class="w-full py-3 px-6 bg-btnColor text-white font-semibold rounded-lg shadow-md hover:bg-btnColor-dark focus:outline-none focus:ring-2 focus:ring-btnColor focus:ring-opacity-75 transition duration-300 scrollToHomeBtn"
+                >
+                  Get Started
+                </button>
+              </div>
+            </div>
+
+            <!-- Enterprise Package -->
+            <div
+              class="w-full md:w-96 bg-white rounded-2xl shadow-xl overflow-hidden transform transition duration-500 hover:scale-105"
+            >
+              <div class="p-8">
+                <div class="flex items-center justify-between mb-8">
+                  <h3 class="text-2xl font-bold text-gray-800">Enterprise</h3>
+                  <span
+                    class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm font-semibold"
+                    >Custom</span
+                  >
                 </div>
-                <div class="p-8 bg-gray-50">
-                  <button class="w-full py-3 px-6 bg-btnColor text-white font-semibold rounded-lg shadow-md hover:bg-btnColor-dark focus:outline-none focus:ring-2 focus:ring-btnColor focus:ring-opacity-75 transition duration-300 scrollToHomeBtn">
-                    Get Started
-                  </button>
-                </div>
+                <p class="text-5xl font-bold text-btnColor mb-6">
+                  $499<span class="text-xl text-gray-500">/mo</span>
+                </p>
+                <ul class="text-gray-600 mb-8 space-y-4">
+                  <li class="flex items-center">
+                    <svg
+                      class="w-5 h-5 mr-2 text-green-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                    Custom Web Development
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                      class="w-5 h-5 mr-2 text-green-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                    Unlimited Pages
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                      class="w-5 h-5 mr-2 text-green-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                    Premium SEO Package
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                      class="w-5 h-5 mr-2 text-green-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                    12 Months Support
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                      class="w-5 h-5 mr-2 text-green-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                    Advanced Analytics
+                  </li>
+                </ul>
+              </div>
+              <div class="p-8 bg-gray-50">
+                <button
+                  class="w-full py-3 px-6 bg-btnColor text-white font-semibold rounded-lg shadow-md hover:bg-btnColor-dark focus:outline-none focus:ring-2 focus:ring-btnColor focus:ring-opacity-75 transition duration-300 scrollToHomeBtn"
+                >
+                  Get Started
+                </button>
               </div>
             </div>
           </div>
-        </section>
-        <!-- End Package Section -->
-
-        
-    
-
+        </div>
+      </section>
+      <!-- End Package Section -->
 
       <!-- start contact  -->
       <section id="contact" class="bg-base-100">
@@ -996,7 +1517,9 @@
               </div>
               <!-- contact box 01 -->
               <div
-              data-aos="fade-left" data-aos-duration="1200" data-aos-easing="ease-in-out"
+                data-aos="fade-left"
+                data-aos-duration="1200"
+                data-aos-easing="ease-in-out"
                 class="p-6 border rounded-md hover:shadow-2xl transition duration-700"
               >
                 <div class="flex items-center gap-4">
@@ -1015,7 +1538,10 @@
                 </div>
               </div>
               <!-- contact box 02 -->
-              <div data-aos="fade-left" data-aos-duration="1400" data-aos-easing="ease-in-out"
+              <div
+                data-aos="fade-left"
+                data-aos-duration="1400"
+                data-aos-easing="ease-in-out"
                 class="p-6 border rounded-md hover:shadow-2xl transition duration-700"
               >
                 <div class="flex items-center gap-4">
@@ -1028,13 +1554,17 @@
                       General Enquires
                     </h2>
                     <p class="text-gray-600">
-                      Phone: +98 060 712 34 & Email: contact@minimaticsolutions.com
+                      Phone: +98 060 712 34 & Email:
+                      contact@minimaticsolutions.com
                     </p>
                   </div>
                 </div>
               </div>
               <!-- contact box 03 -->
-              <div data-aos="fade-left" data-aos-duration="1600" data-aos-easing="ease-in-out"
+              <div
+                data-aos="fade-left"
+                data-aos-duration="1600"
+                data-aos-easing="ease-in-out"
                 class="p-6 border rounded hover:shadow-2xl transition duration-700"
               >
                 <div class="flex items-center gap-4">
@@ -1166,13 +1696,23 @@
       </div>
     </footer>
     <!-- Toast -->
-    <div id="toast" class="fixed bottom-4 right-4 hidden items-center p-4 mb-4 bg-white rounded-lg shadow-lg border border-gray-200 transition-opacity duration-300" role="alert">
-      <div class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 bg-btnColor rounded-lg">
-          <i class="fas fa-check text-white"></i>
+    <div
+      id="toast"
+      class="fixed bottom-4 right-4 hidden items-center p-4 mb-4 bg-white rounded-lg shadow-lg border border-gray-200 transition-opacity duration-300"
+      role="alert"
+    >
+      <div
+        class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 bg-btnColor rounded-lg"
+      >
+        <i class="fas fa-check text-white"></i>
       </div>
       <div class="ml-3 text-sm font-normal">Thank you for subscribing!</div>
-      <button type="button" class="ml-auto -mx-1.5 -my-1.5 bg-white text-gray-400 hover:text-gray-900 rounded-lg p-1.5 hover:bg-gray-100 inline-flex h-8 w-8" onclick="hideToast()">
-          <i class="fas fa-times"></i>
+      <button
+        type="button"
+        class="ml-auto -mx-1.5 -my-1.5 bg-white text-gray-400 hover:text-gray-900 rounded-lg p-1.5 hover:bg-gray-100 inline-flex h-8 w-8"
+        onclick="hideToast()"
+      >
+        <i class="fas fa-times"></i>
       </button>
     </div>
     <script src="./script.js"></script>
